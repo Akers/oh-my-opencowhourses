@@ -295,6 +295,13 @@ export const PluginConfigSchema = z
     manualPlan: ManualPlanSchema.optional(),
     presets: z.record(z.string(), PresetSchema).optional(),
     agents: z.record(z.string(), AgentOverrideConfigSchema).optional(),
+    agentDescriptions: z
+      .record(z.string(), z.any())
+      .optional()
+      .describe(
+        'Agent descriptions manifest for orchestrator prompt assembly. ' +
+          'Partial overrides to the built-in manifest.',
+      ),
     disabled_agents: z
       .array(z.string())
       .optional()

@@ -18,6 +18,7 @@ import {
   ForegroundFallbackManager,
 } from './hooks';
 import { processImageAttachments } from './hooks/image-hook';
+import { preserveReasoningContent } from './hooks/reasoning-preserve';
 import { createInterviewManager } from './interview';
 import { createBuiltinMcps } from './mcp';
 import {
@@ -809,6 +810,13 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
         input,
         typedOutput,
       );
+
+      // Preserve reasoning_content for DeepSeek and other providers that
+      // require it in multi-turn conversations with thinking mode enabled.
+      // When using @ai-sdk/openai-compatible without `interleaved`
+      // configured, reasoning parts are dropped during API serialization,
+      // causing "reasoning_content must be passed back" errors.
+      preserveReasoningContent(typedOutput.messages);
     },
 
     // Post-tool hooks: retry guidance for delegation errors + file-tool

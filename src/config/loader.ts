@@ -66,7 +66,7 @@ function findConfigPath(basePath: string): string | null {
   return null;
 }
 
-function findConfigPathInDirs(
+function _findConfigPathInDirs(
   configDirs: string[],
   baseName: string,
 ): string | null {
@@ -134,28 +134,51 @@ function deepMerge<T extends Record<string, unknown>>(
  * @param directory - Project directory to search for .opencode config
  * @returns Merged plugin configuration (empty object if no configs found)
  */
+/**
+ * Load a single config file from search dirs by base name.
+ * Returns the merged result of all found config files.
+ */
+function loadConfigByName(baseName: string): PluginConfig {
+  const configDirs = getConfigSearchDirs();
+  let merged: PluginConfig = {};
+
+  for (const configDir of configDirs) {
+    const configPath = findConfigPath(path.join(configDir, baseName));
+    if (!configPath) continue;
+    const loaded = loadConfigFromPath(configPath);
+    if (!loaded) continue;
+    merged = {
+      ...merged,
+      ...loaded,
+      agents: deepMerge(merged.agents, loaded.agents),
+      tmux: deepMerge(merged.tmux, loaded.tmux),
+      multiplexer: deepMerge(merged.multiplexer, loaded.multiplexer),
+      interview: deepMerge(merged.interview, loaded.interview),
+      sessionManager: deepMerge(merged.sessionManager, loaded.sessionManager),
+      fallback: deepMerge(merged.fallback, loaded.fallback),
+      council: deepMerge(merged.council, loaded.council),
+    };
+  }
+
+  return merged;
+}
+
 export function loadPluginConfig(directory: string): PluginConfig {
-  const userConfigPath = findConfigPathInDirs(
-    getConfigSearchDirs(),
-    'oh-my-opencode-slim',
-  );
+  // 1. Load oh-my-opencode-slim config (user + project)
+  const slimUserConfig = loadConfigByName('oh-my-opencode-slim');
 
   const projectConfigBasePath = path.join(
     directory,
     '.opencode',
     'oh-my-opencode-slim',
   );
-
-  // Find existing config files (preferring .jsonc over .json)
   const projectConfigPath = findConfigPath(projectConfigBasePath);
-
-  let config: PluginConfig = userConfigPath
-    ? (loadConfigFromPath(userConfigPath) ?? {})
-    : {};
-
   const projectConfig = projectConfigPath
     ? loadConfigFromPath(projectConfigPath)
     : null;
+
+  let config: PluginConfig = { ...slimUserConfig };
+
   if (projectConfig) {
     config = {
       ...config,
@@ -170,6 +193,33 @@ export function loadPluginConfig(directory: string): PluginConfig {
       ),
       fallback: deepMerge(config.fallback, projectConfig.fallback),
       council: deepMerge(config.council, projectConfig.council),
+    };
+  }
+
+  // 2. Load oh-my-opencowhorses config (user + project) — higher priority
+  const cowhorsesUserConfig = loadConfigByName('oh-my-opencowhorses');
+
+  const cowhorsesProjectPath = findConfigPath(
+    path.join(directory, '.opencode', 'oh-my-opencowhorses'),
+  );
+  const cowhorsesProjectConfig = cowhorsesProjectPath
+    ? loadConfigFromPath(cowhorsesProjectPath)
+    : null;
+
+  // Merge cowhorses config on top (wins on conflict)
+  const mergedCowhorses = deepMerge(
+    cowhorsesUserConfig as Record<string, unknown>,
+    (cowhorsesProjectConfig ?? {}) as Record<string, unknown>,
+  );
+
+  if (mergedCowhorses) {
+    config = {
+      ...config,
+      ...(mergedCowhorses as PluginConfig),
+      agents: deepMerge(
+        config.agents,
+        (mergedCowhorses as PluginConfig).agents,
+      ),
     };
   }
 

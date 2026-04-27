@@ -24,6 +24,7 @@ import { createObserverAgent } from './observer';
 import { createOracleAgent } from './oracle';
 import {
   type AgentDefinition,
+  type AgentManifestEntry,
   createOrchestratorAgent,
   resolvePrompt,
 } from './orchestrator';
@@ -335,6 +336,9 @@ export function createAgents(config?: PluginConfig): AgentDefinition[] {
     orchestratorPrompts.prompt,
     orchestratorPrompts.appendPrompt,
     disabled,
+    config?.agentDescriptions as
+      | Record<string, Partial<AgentManifestEntry>>
+      | undefined,
   );
   applyDefaultPermissions(orchestrator, orchestratorOverride?.skills);
   if (orchestratorOverride) {
