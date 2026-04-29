@@ -296,9 +296,7 @@ export class WorkflowExecutor {
           return {
             state: 'failed',
             output: '',
-            error: error instanceof Error
-              ? error.message
-              : String(error),
+            error: error instanceof Error ? error.message : String(error),
           };
         }
         await new Promise((resolve) => setTimeout(resolve, delayMs));
@@ -416,12 +414,8 @@ export class WorkflowExecutor {
   private async executeScriptNode(
     node: import('./schemas').ScriptNode,
   ): Promise<NodeOutput> {
-    const runtime = node.runtime ?? 'bun';
-    const cmd = runtime === 'uv' ? 'uv' : 'bun';
-    const args = runtime === 'uv' ? ['run', node.script] : [node.script];
-
     try {
-      const { stdout } = await execFileAsync(cmd, args, {
+      const { stdout } = await execFileAsync('bun', [node.script], {
         cwd: this.options.directory,
         timeout: 120_000,
         maxBuffer: 1024 * 1024,
@@ -493,7 +487,11 @@ export class WorkflowExecutor {
       if (!approvalConfig.on_reject) break;
     }
 
-    return { state: 'completed', output: 'Rejected' };
+    return {
+      state: 'failed',
+      output: 'Rejected',
+      error: 'User rejected approval',
+    };
   }
 
   private async runSession(

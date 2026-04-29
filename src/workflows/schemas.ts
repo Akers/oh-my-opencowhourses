@@ -55,7 +55,7 @@ export type BashNode = z.infer<typeof BashNodeSchema>;
 // Script node: Bun/uv script execution
 export const ScriptNodeSchema = DagNodeBaseSchema.extend({
   script: z.string().min(1),
-  runtime: z.enum(['bun', 'uv']).optional(),
+  runtime: z.enum(['bun']).optional(),
 });
 export type ScriptNode = z.infer<typeof ScriptNodeSchema>;
 

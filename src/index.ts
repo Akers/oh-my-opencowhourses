@@ -1,3 +1,4 @@
+import * as path from 'node:path';
 import type { Plugin } from '@opencode-ai/plugin';
 import { createAgents, getAgentConfigs, getDisabledAgents } from './agents';
 import { buildOrchestratorPrompt } from './agents/orchestrator';
@@ -28,14 +29,9 @@ import {
   createTodoContinuationHook,
   ForegroundFallbackManager,
 } from './hooks';
-import * as path from 'node:path';
 import { processImageAttachments } from './hooks/image-hook';
 import { createInterviewManager } from './interview';
 import { createBuiltinMcps } from './mcp';
-import {
-  loadWorkflowsFromDirectory,
-  WorkflowExecutor,
-} from './workflows';
 import {
   getMultiplexer,
   MultiplexerSessionManager,
@@ -55,6 +51,7 @@ import {
 import { initLogger, log } from './utils/logger';
 import { SubagentDepthTracker } from './utils/subagent-depth';
 import { collapseSystemInPlace } from './utils/system-collapse';
+import { loadWorkflowsFromDirectory, WorkflowExecutor } from './workflows';
 
 /**
  * Best-effort log to opencode's app logger.
@@ -144,10 +141,8 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
   let rewriteDisplayNameMentions: ReturnType<
     typeof createDisplayNameMentionRewriter
   >;
-  let loadedWorkflows: ReturnType<
-    typeof loadWorkflowsFromDirectory
-  > = [];
-  let workflowsEnabled = false;
+  const loadedWorkflows: ReturnType<typeof loadWorkflowsFromDirectory> = [];
+  const workflowsEnabled = false;
 
   // Counters for post-init health check (set inside try, checked outside)
   let toolCount = 0;
@@ -256,16 +251,10 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
     webfetch = createWebfetchTool(ctx);
 
     // Initialize workflow engine (loads from .opencode/workflows/)
-    const workflowsDir = path.join(
-      ctx.directory,
-      '.opencode',
-      'workflows',
-    );
-    const loadedWorkflows =
-      loadWorkflowsFromDirectory(workflowsDir);
+    const workflowsDir = path.join(ctx.directory, '.opencode', 'workflows');
+    const loadedWorkflows = loadWorkflowsFromDirectory(workflowsDir);
     const workflowsEnabled =
-      config.workflows?.enabled !== false &&
-      loadedWorkflows.length > 0;
+      config.workflows?.enabled !== false && loadedWorkflows.length > 0;
 
     if (workflowsEnabled) {
       log('[plugin] workflow engine loaded', {
@@ -879,12 +868,8 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
             text: `Available workflows:\n${names.join('\n')}`,
           });
         } else {
-          const workflowName = args.startsWith('run ')
-            ? args.slice(4)
-            : args;
-          const workflow = loadedWorkflows.find(
-            (w) => w.name === workflowName,
-          );
+          const workflowName = args.startsWith('run ') ? args.slice(4) : args;
+          const workflow = loadedWorkflows.find((w) => w.name === workflowName);
 
           if (!workflow) {
             typedOutput.parts.length = 0;
@@ -894,10 +879,6 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
             });
           } else {
             typedOutput.parts.length = 0;
-            typedOutput.parts.push({
-              type: 'text',
-              text: `Starting workflow "${workflow.name}"...`,
-            });
 
             const executor = new WorkflowExecutor({
               client: ctx.client,
@@ -905,26 +886,26 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
               parentSessionId: typedInput.sessionID,
             });
 
-            executor
-              .execute(workflow)
-              .then((nodeOutputs) => {
-                const summary = Object.entries(nodeOutputs)
-                  .map(([id, o]) => `- ${id}: ${o.state}`)
-                  .join('\n');
-                log('[workflow] completed', {
-                  workflow: workflow.name,
-                  summary,
-                });
-              })
-              .catch((error: unknown) => {
-                log('[workflow] error', {
-                  error:
-                    error instanceof Error
-                      ? error.message
-                      : String(error),
-                  workflow: workflow.name,
-                });
+            try {
+              const nodeOutputs = await executor.execute(workflow);
+              const summary = Object.entries(nodeOutputs)
+                .map(
+                  ([id, o]) =>
+                    `- **${id}**: ${o.state}${o.error ? ` (${o.error})` : ''}`,
+                )
+                .join('\n');
+              typedOutput.parts.push({
+                type: 'text',
+                text: `Workflow "${workflow.name}" completed:\n${summary}`,
               });
+            } catch (error: unknown) {
+              const msg =
+                error instanceof Error ? error.message : String(error);
+              typedOutput.parts.push({
+                type: 'text',
+                text: `Workflow "${workflow.name}" failed: ${msg}`,
+              });
+            }
           }
         }
       }
