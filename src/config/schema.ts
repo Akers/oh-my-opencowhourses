@@ -318,6 +318,18 @@ export const PluginConfigSchema = z
     todoContinuation: TodoContinuationConfigSchema.optional(),
     fallback: FailoverConfigSchema.optional(),
     council: CouncilConfigSchema.optional(),
+    workflows: z
+      .object({
+        enabled: z.boolean().default(true),
+        auto_route: z
+          .boolean()
+          .default(true)
+          .describe(
+            'Automatically route user requests to matching workflows',
+          ),
+        default_workflow: z.string().optional(),
+      })
+      .optional(),
   })
   .superRefine((value, ctx) => {
     if (value.agents) {
