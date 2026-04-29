@@ -289,12 +289,16 @@ export class WorkflowExecutor {
       try {
         return await this.executeNodeByKind(node, kind, outputs);
       } catch (error) {
+        // Always propagate cancellation — retry is not appropriate
+        if (error instanceof WorkflowCancelledError) throw error;
         const isLast = attempt === maxAttempts;
         if (isLast) {
           return {
             state: 'failed',
             output: '',
-            error: error instanceof Error ? error.message : String(error),
+            error: error instanceof Error
+              ? error.message
+              : String(error),
           };
         }
         await new Promise((resolve) => setTimeout(resolve, delayMs));
@@ -485,8 +489,8 @@ export class WorkflowExecutor {
         return { state: 'completed', output: 'Approved' };
       }
 
-      if (approvalConfig.on_reject && attempt < maxAttempts - 1) {
-      }
+      // Continue to next attempt if on_reject is configured
+      if (!approvalConfig.on_reject) break;
     }
 
     return { state: 'completed', output: 'Rejected' };
