@@ -7,8 +7,8 @@ import {
   loadPluginConfig,
   type MultiplexerConfig,
 } from './config';
-import { AGENT_ALIASES } from './config/constants';
 import { parseList } from './config/agent-mcps';
+import { AGENT_ALIASES } from './config/constants';
 import {
   getActiveRuntimePreset,
   getPreviousRuntimePreset,
@@ -28,9 +28,14 @@ import {
   createTodoContinuationHook,
   ForegroundFallbackManager,
 } from './hooks';
+import * as path from 'node:path';
 import { processImageAttachments } from './hooks/image-hook';
 import { createInterviewManager } from './interview';
 import { createBuiltinMcps } from './mcp';
+import {
+  loadWorkflowsFromDirectory,
+  WorkflowExecutor,
+} from './workflows';
 import {
   getMultiplexer,
   MultiplexerSessionManager,
@@ -139,6 +144,10 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
   let rewriteDisplayNameMentions: ReturnType<
     typeof createDisplayNameMentionRewriter
   >;
+  let loadedWorkflows: ReturnType<
+    typeof loadWorkflowsFromDirectory
+  > = [];
+  let workflowsEnabled = false;
 
   // Counters for post-init health check (set inside try, checked outside)
   let toolCount = 0;
@@ -245,6 +254,25 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
 
     mcps = createBuiltinMcps(config.disabled_mcps, config.websearch);
     webfetch = createWebfetchTool(ctx);
+
+    // Initialize workflow engine (loads from .opencode/workflows/)
+    const workflowsDir = path.join(
+      ctx.directory,
+      '.opencode',
+      'workflows',
+    );
+    const loadedWorkflows =
+      loadWorkflowsFromDirectory(workflowsDir);
+    const workflowsEnabled =
+      config.workflows?.enabled !== false &&
+      loadedWorkflows.length > 0;
+
+    if (workflowsEnabled) {
+      log('[plugin] workflow engine loaded', {
+        auto_route: config.workflows?.auto_route ?? true,
+        workflows: loadedWorkflows.map((w) => w.name),
+      });
+    }
 
     // Initialize MultiplexerSessionManager to handle OpenCode's built-in
     // Task tool sessions
@@ -576,15 +604,11 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
           // Build resolved key set from new preset for correct comparison
           // (handles alias keys like "explore" → "explorer")
           const newPresetResolved = new Set(
-            Object.keys(runtimePreset).map(
-              (k) => AGENT_ALIASES[k] ?? k,
-            ),
+            Object.keys(runtimePreset).map((k) => AGENT_ALIASES[k] ?? k),
           );
           for (const agentName of Object.keys(prevPreset)) {
-            const resolvedName =
-              AGENT_ALIASES[agentName] ?? agentName;
-            if (newPresetResolved.has(resolvedName))
-              continue; // new preset handles it
+            const resolvedName = AGENT_ALIASES[agentName] ?? agentName;
+            if (newPresetResolved.has(resolvedName)) continue; // new preset handles it
             const entry = configAgent[resolvedName] as
               | Record<string, unknown>
               | undefined;
@@ -592,8 +616,7 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
             // Reset to config-file baseline. Use the previous preset's
             // override to identify which fields to clear even when the
             // baseline doesn't define them.
-            const baseline =
-              config.agents?.[resolvedName];
+            const baseline = config.agents?.[resolvedName];
             const prevOverride = prevPreset[agentName] as
               | AgentOverrideConfig
               | undefined;
@@ -602,18 +625,12 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
             }
             if (typeof baseline?.variant === 'string') {
               entry.variant = baseline.variant;
-            } else if (
-              prevOverride &&
-              'variant' in prevOverride
-            ) {
+            } else if (prevOverride && 'variant' in prevOverride) {
               delete entry.variant;
             }
             if (typeof baseline?.temperature === 'number') {
               entry.temperature = baseline.temperature;
-            } else if (
-              prevOverride &&
-              'temperature' in prevOverride
-            ) {
+            } else if (prevOverride && 'temperature' in prevOverride) {
               delete entry.temperature;
             }
             if (
@@ -622,10 +639,7 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
               !Array.isArray(baseline.options)
             ) {
               entry.options = baseline.options;
-            } else if (
-              prevOverride &&
-              'options' in prevOverride
-            ) {
+            } else if (prevOverride && 'options' in prevOverride) {
               delete entry.options;
             }
             log('[plugin] runtime preset reset from previous', {
@@ -710,6 +724,18 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
 
       interviewManager.registerCommand(opencodeConfig);
       presetManager.registerCommand(opencodeConfig);
+
+      // Register /workflow command when workflows are available
+      if (workflowsEnabled) {
+        if (!opencodeConfig.command) {
+          opencodeConfig.command = {};
+        }
+        (opencodeConfig.command as Record<string, unknown>).workflow = {
+          template: 'Run a named workflow or list available workflows',
+          description:
+            'Execute a YAML-defined DAG workflow (use /workflow list to see available)',
+        };
+      }
     },
 
     event: async (input) => {
@@ -830,6 +856,78 @@ const OhMyOpenCodeLite: Plugin = async (ctx) => {
         },
         output as { parts: Array<{ type: string; text?: string }> },
       );
+
+      // Handle /workflow command
+      if (workflowsEnabled && input.command === 'workflow') {
+        const typedInput = input as {
+          command: string;
+          sessionID: string;
+          arguments: string;
+        };
+        const typedOutput = output as {
+          parts: Array<{ type: string; text?: string }>;
+        };
+        const args = typedInput.arguments.trim();
+
+        if (!args || args === 'list') {
+          typedOutput.parts.length = 0;
+          const names = loadedWorkflows.map(
+            (w) => `- **${w.name}**: ${w.description.split('\n')[0]}`,
+          );
+          typedOutput.parts.push({
+            type: 'text',
+            text: `Available workflows:\n${names.join('\n')}`,
+          });
+        } else {
+          const workflowName = args.startsWith('run ')
+            ? args.slice(4)
+            : args;
+          const workflow = loadedWorkflows.find(
+            (w) => w.name === workflowName,
+          );
+
+          if (!workflow) {
+            typedOutput.parts.length = 0;
+            typedOutput.parts.push({
+              type: 'text',
+              text: `Workflow "${workflowName}" not found. Available: ${loadedWorkflows.map((w) => w.name).join(', ')}`,
+            });
+          } else {
+            typedOutput.parts.length = 0;
+            typedOutput.parts.push({
+              type: 'text',
+              text: `Starting workflow "${workflow.name}"...`,
+            });
+
+            const executor = new WorkflowExecutor({
+              client: ctx.client,
+              directory: ctx.directory,
+              parentSessionId: typedInput.sessionID,
+            });
+
+            executor
+              .execute(workflow)
+              .then((nodeOutputs) => {
+                const summary = Object.entries(nodeOutputs)
+                  .map(([id, o]) => `- ${id}: ${o.state}`)
+                  .join('\n');
+                log('[workflow] completed', {
+                  workflow: workflow.name,
+                  summary,
+                });
+              })
+              .catch((error: unknown) => {
+                log('[workflow] error', {
+                  error:
+                    error instanceof Error
+                      ? error.message
+                      : String(error),
+                  workflow: workflow.name,
+                });
+              });
+          }
+        }
+      }
     },
 
     'chat.headers': chatHeadersHook['chat.headers'],

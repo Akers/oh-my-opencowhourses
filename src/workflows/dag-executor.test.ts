@@ -62,7 +62,7 @@ describe('buildTopologicalLayers', () => {
       { id: 'b', agent: 'oracle', depends_on: ['a'], prompt: 'y' },
     ] as any[];
 
-    expect(() => buildTopologicalLayers(nodes)).toThrow(/cycle/i);
+    expect(() => buildTopologicalLayers(nodes)).toThrow(/circular/i);
   });
 
   it('throws on missing dependency', () => {
