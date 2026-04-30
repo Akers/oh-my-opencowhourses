@@ -1,0 +1,896 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_codec_ts",
+      "label": "codec.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "codec_normalizelineendings",
+      "label": "normalizeLineEndings()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "codec_normalizeunicode",
+      "label": "normalizeUnicode()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "codec_stripheredoc",
+      "label": "stripHeredoc()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "codec_normalizepatchtext",
+      "label": "normalizePatchText()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "codec_parseheader",
+      "label": "parseHeader()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "codec_unexpectedpatchline",
+      "label": "unexpectedPatchLine()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "codec_parsechangecontext",
+      "label": "parseChangeContext()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "codec_ispatchboundary",
+      "label": "isPatchBoundary()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L80"
+    },
+    {
+      "id": "codec_parsechunks",
+      "label": "parseChunks()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L84"
+    },
+    {
+      "id": "codec_parseadd",
+      "label": "parseAdd()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L154"
+    },
+    {
+      "id": "codec_parsepatchinternal",
+      "label": "parsePatchInternal()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L175"
+    },
+    {
+      "id": "codec_parsepatch",
+      "label": "parsePatch()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L249"
+    },
+    {
+      "id": "codec_parsepatchstrict",
+      "label": "parsePatchStrict()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L253"
+    },
+    {
+      "id": "codec_diffmatrix",
+      "label": "diffMatrix()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L257"
+    },
+    {
+      "id": "codec_renderchunk",
+      "label": "renderChunk()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L274"
+    },
+    {
+      "id": "codec_renderaddcontents",
+      "label": "renderAddContents()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L318"
+    },
+    {
+      "id": "codec_formatpatch",
+      "label": "formatPatch()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L326"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_normalizelineendings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_normalizeunicode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_stripheredoc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_normalizepatchtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parseheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_unexpectedpatchline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parsechangecontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_ispatchboundary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parsechunks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parseadd",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parsepatchinternal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parsepatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_parsepatchstrict",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_diffmatrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_renderchunk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L274",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_renderaddcontents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_ts",
+      "target": "codec_formatpatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_stripheredoc",
+      "target": "codec_normalizelineendings",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_normalizepatchtext",
+      "target": "codec_stripheredoc",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_normalizepatchtext",
+      "target": "codec_normalizelineendings",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsechunks",
+      "target": "codec_unexpectedpatchline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsechunks",
+      "target": "codec_parsechangecontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parseadd",
+      "target": "codec_unexpectedpatchline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatchinternal",
+      "target": "codec_normalizepatchtext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatchinternal",
+      "target": "codec_unexpectedpatchline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L191",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatchinternal",
+      "target": "codec_parseheader",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatchinternal",
+      "target": "codec_parseadd",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatchinternal",
+      "target": "codec_parsechunks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatch",
+      "target": "codec_parsepatchinternal",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_parsepatchstrict",
+      "target": "codec_parsepatchinternal",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L254",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_renderchunk",
+      "target": "codec_diffmatrix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_formatpatch",
+      "target": "codec_renderaddcontents",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L332",
+      "weight": 1.0
+    },
+    {
+      "source": "codec_formatpatch",
+      "target": "codec_renderchunk",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L346",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "codec_normalizelineendings",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "codec_normalizelineendings",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "codec_normalizeunicode",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "codec_normalizeunicode",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "codec_normalizeunicode",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "codec_normalizeunicode",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "codec_normalizeunicode",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "codec_stripheredoc",
+      "callee": "match",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "codec_normalizepatchtext",
+      "callee": "trim",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "trim",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "trim",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "trim",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "trim",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "codec_parseheader",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "codec_parsechangecontext",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "codec_parsechangecontext",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "codec_parsechangecontext",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "codec_ispatchboundary",
+      "callee": "trimEnd",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L117"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "codec_parsechunks",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "codec_parseadd",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L158"
+    },
+    {
+      "caller_nid": "codec_parseadd",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "codec_parseadd",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L160"
+    },
+    {
+      "caller_nid": "codec_parseadd",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L160"
+    },
+    {
+      "caller_nid": "codec_parseadd",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L172"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "split",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L177"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "findIndex",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "findIndex",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L181"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L190"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L194"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L213"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L215"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "startsWith",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L224"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L225"
+    },
+    {
+      "caller_nid": "codec_parsepatchinternal",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L237"
+    },
+    {
+      "caller_nid": "codec_diffmatrix",
+      "callee": "from",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L258"
+    },
+    {
+      "caller_nid": "codec_diffmatrix",
+      "callee": "max",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L267"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L283"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L290"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L295"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L300"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L305"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L309"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "reverse",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L309"
+    },
+    {
+      "caller_nid": "codec_renderchunk",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L312"
+    },
+    {
+      "caller_nid": "codec_renderaddcontents",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L323"
+    },
+    {
+      "caller_nid": "codec_renderaddcontents",
+      "callee": "split",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L323"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L331"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L332"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L337"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L341"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L343"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L346"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L350"
+    },
+    {
+      "caller_nid": "codec_formatpatch",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/codec.ts",
+      "source_location": "L351"
+    }
+  ]
+}

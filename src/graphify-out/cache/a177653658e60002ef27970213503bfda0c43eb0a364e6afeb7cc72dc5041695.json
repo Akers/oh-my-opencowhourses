@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_chat_headers_ts",
+      "label": "chat-headers.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "chat_headers_resetinternalmarkercachefortesting",
+      "label": "__resetInternalMarkerCacheForTesting()",
+      "file_type": "code",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "chat_headers_getproviderid",
+      "label": "getProviderID()",
+      "file_type": "code",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "chat_headers_iscopilotprovider",
+      "label": "isCopilotProvider()",
+      "file_type": "code",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "chat_headers_hasinternalmarker",
+      "label": "hasInternalMarker()",
+      "file_type": "code",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "chat_headers_createchatheadershook",
+      "label": "createChatHeadersHook()",
+      "file_type": "code",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L66"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "sdk",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "src_hooks_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "chat_headers_resetinternalmarkercachefortesting",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "chat_headers_getproviderid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "chat_headers_iscopilotprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "chat_headers_hasinternalmarker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_chat_headers_ts",
+      "target": "chat_headers_createchatheadershook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L66",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "chat_headers_resetinternalmarkercachefortesting",
+      "callee": "clear",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "chat_headers_hasinternalmarker",
+      "callee": "get",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "chat_headers_hasinternalmarker",
+      "callee": "message",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "chat_headers_hasinternalmarker",
+      "callee": "some",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "chat_headers_hasinternalmarker",
+      "callee": "clear",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "chat_headers_hasinternalmarker",
+      "callee": "set",
+      "source_file": "src/hooks/chat-headers.ts",
+      "source_location": "L57"
+    }
+  ]
+}

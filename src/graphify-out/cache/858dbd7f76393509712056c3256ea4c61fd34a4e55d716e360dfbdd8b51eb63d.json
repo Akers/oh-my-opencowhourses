@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_delegate_task_retry_guidance_ts",
+      "label": "guidance.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "guidance_extractavailablelist",
+      "label": "extractAvailableList()",
+      "file_type": "code",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "guidance_buildretryguidance",
+      "label": "buildRetryGuidance()",
+      "file_type": "code",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_delegate_task_retry_guidance_ts",
+      "target": "src_hooks_delegate_task_retry_patterns",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_delegate_task_retry_guidance_ts",
+      "target": "guidance_extractavailablelist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_delegate_task_retry_guidance_ts",
+      "target": "guidance_buildretryguidance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "guidance_buildretryguidance",
+      "target": "guidance_extractavailablelist",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "guidance_extractavailablelist",
+      "callee": "match",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L4"
+    },
+    {
+      "caller_nid": "guidance_extractavailablelist",
+      "callee": "trim",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L5"
+    },
+    {
+      "caller_nid": "guidance_extractavailablelist",
+      "callee": "match",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L7"
+    },
+    {
+      "caller_nid": "guidance_extractavailablelist",
+      "callee": "trim",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "guidance_buildretryguidance",
+      "callee": "find",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "guidance_buildretryguidance",
+      "callee": "push",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "guidance_buildretryguidance",
+      "callee": "push",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "guidance_buildretryguidance",
+      "callee": "join",
+      "source_file": "src/hooks/delegate-task-retry/guidance.ts",
+      "source_location": "L40"
+    }
+  ]
+}

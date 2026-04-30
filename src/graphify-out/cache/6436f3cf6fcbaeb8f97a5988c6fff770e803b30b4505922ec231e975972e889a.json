@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_internal_initiator_ts",
+      "label": "internal-initiator.ts",
+      "file_type": "code",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "internal_initiator_isrecord",
+      "label": "isRecord()",
+      "file_type": "code",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "internal_initiator_createinternalagenttextpart",
+      "label": "createInternalAgentTextPart()",
+      "file_type": "code",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "internal_initiator_hasinternalinitiatormarker",
+      "label": "hasInternalInitiatorMarker()",
+      "file_type": "code",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_internal_initiator_ts",
+      "target": "internal_initiator_isrecord",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_internal_initiator_ts",
+      "target": "internal_initiator_createinternalagenttextpart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_internal_initiator_ts",
+      "target": "internal_initiator_hasinternalinitiatormarker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "internal_initiator_hasinternalinitiatormarker",
+      "target": "internal_initiator_isrecord",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "internal_initiator_hasinternalinitiatormarker",
+      "callee": "includes",
+      "source_file": "src/utils/internal-initiator.ts",
+      "source_location": "L27"
+    }
+  ]
+}

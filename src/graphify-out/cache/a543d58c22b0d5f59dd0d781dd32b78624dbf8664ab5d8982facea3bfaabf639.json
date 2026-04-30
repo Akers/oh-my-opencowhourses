@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "src_config_agent_mcps_ts",
+      "label": "agent-mcps.ts",
+      "file_type": "code",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "agent_mcps_parselist",
+      "label": "parseList()",
+      "file_type": "code",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "agent_mcps_getavailablemcpnames",
+      "label": "getAvailableMcpNames()",
+      "file_type": "code",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "agent_mcps_getagentmcplist",
+      "label": "getAgentMcpList()",
+      "file_type": "code",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L58"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_config_agent_mcps_ts",
+      "target": "src_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_agent_mcps_ts",
+      "target": "agent_mcps_parselist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_agent_mcps_ts",
+      "target": "agent_mcps_getavailablemcpnames",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_agent_mcps_ts",
+      "target": "agent_mcps_getagentmcplist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "filter",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "map",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "filter",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "includes",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "includes",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "filter",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "agent_mcps_parselist",
+      "callee": "filter",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "agent_mcps_getavailablemcpnames",
+      "callee": "filter",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "agent_mcps_getagentmcplist",
+      "callee": "getAgentOverride",
+      "source_file": "src/config/agent-mcps.ts",
+      "source_location": "L62"
+    }
+  ]
+}

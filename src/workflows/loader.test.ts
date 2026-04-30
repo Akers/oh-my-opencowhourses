@@ -2,10 +2,7 @@ import { describe, expect, it } from 'bun:test';
 import * as fs from 'node:fs';
 import * as os from 'node:os';
 import * as path from 'node:path';
-import {
-  loadWorkflowsFromDirectory,
-  parseWorkflowYaml,
-} from './loader';
+import { loadWorkflowsFromDirectory, parseWorkflowYaml } from './loader';
 
 const VALID_WORKFLOW_YAML = `
 name: test-workflow
@@ -77,17 +74,9 @@ describe('loadWorkflowsFromDirectory', () => {
   });
 
   it('loads workflows from directory with valid YAML files', () => {
-    const tmpDir = fs.mkdtempSync(
-      path.join(os.tmpdir(), 'wf-test-'),
-    );
-    fs.writeFileSync(
-      path.join(tmpDir, 'test.yaml'),
-      VALID_WORKFLOW_YAML,
-    );
-    fs.writeFileSync(
-      path.join(tmpDir, 'bad.txt'),
-      'not yaml',
-    );
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'wf-test-'));
+    fs.writeFileSync(path.join(tmpDir, 'test.yaml'), VALID_WORKFLOW_YAML);
+    fs.writeFileSync(path.join(tmpDir, 'bad.txt'), 'not yaml');
 
     try {
       const result = loadWorkflowsFromDirectory(tmpDir);

@@ -1,0 +1,123 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_preset_manager_test_ts",
+      "label": "preset-manager.test.ts",
+      "file_type": "code",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "preset_manager_test_createmockcontext",
+      "label": "createMockContext()",
+      "file_type": "code",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "preset_manager_test_createoutput",
+      "label": "createOutput()",
+      "file_type": "code",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "preset_manager_test_getoutputtext",
+      "label": "getOutputText()",
+      "file_type": "code",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L25"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "src_tools_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "src_tools_config_runtime_preset",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "src_tools_preset_manager",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "preset_manager_test_createmockcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "preset_manager_test_createoutput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_preset_manager_test_ts",
+      "target": "preset_manager_test_getoutputtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "preset_manager_test_createmockcontext",
+      "callee": "mock",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "preset_manager_test_getoutputtext",
+      "callee": "join",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "preset_manager_test_getoutputtext",
+      "callee": "map",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "preset_manager_test_getoutputtext",
+      "callee": "filter",
+      "source_file": "src/tools/preset-manager.test.ts",
+      "source_location": "L26"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_foreground_fallback_index_test_ts",
+      "label": "index.test.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_test_createmockclient",
+      "label": "createMockClient()",
+      "file_type": "code",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "index_test_makechains",
+      "label": "makeChains()",
+      "file_type": "code",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L36"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_foreground_fallback_index_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_foreground_fallback_index_test_ts",
+      "target": "src_hooks_foreground_fallback_index",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_foreground_fallback_index_test_ts",
+      "target": "index_test_createmockclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_foreground_fallback_index_test_ts",
+      "target": "index_test_makechains",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "index_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "index_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/hooks/foreground-fallback/index.test.ts",
+      "source_location": "L17"
+    }
+  ]
+}

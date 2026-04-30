@@ -1,0 +1,264 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_ast_grep_utils_ts",
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_formatsearchresult",
+      "label": "formatSearchResult()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "utils_formatreplaceresult",
+      "label": "formatReplaceResult()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "utils_getemptyresulthint",
+      "label": "getEmptyResultHint()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L99"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_ast_grep_utils_ts",
+      "target": "src_tools_ast_grep_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_utils_ts",
+      "target": "utils_formatsearchresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_utils_ts",
+      "target": "utils_formatreplaceresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_utils_ts",
+      "target": "utils_getemptyresulthint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "get",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "set",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L19"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "substring",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "replace",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "utils_formatsearchresult",
+      "callee": "join",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "get",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "set",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "substring",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "substring",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "replace",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "replace",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "utils_formatreplaceresult",
+      "callee": "join",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "trim",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L103"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "startsWith",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "endsWith",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "slice",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "startsWith",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "startsWith",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "endsWith",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "slice",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "includes",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "utils_getemptyresulthint",
+      "callee": "test",
+      "source_file": "src/tools/ast-grep/utils.ts",
+      "source_location": "L120"
+    }
+  ]
+}

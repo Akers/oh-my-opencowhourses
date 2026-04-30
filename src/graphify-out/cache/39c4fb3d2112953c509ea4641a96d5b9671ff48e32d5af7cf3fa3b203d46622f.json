@@ -1,0 +1,722 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_auto_update_checker_checker_ts",
+      "label": "checker.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "checker_isstring",
+      "label": "isString()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "checker_getpluginentries",
+      "label": "getPluginEntries()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "checker_isprereleaseversion",
+      "label": "isPrereleaseVersion()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "checker_isdisttag",
+      "label": "isDistTag()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L39"
+    },
+    {
+      "id": "checker_extractchannel",
+      "label": "extractChannel()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "checker_getconfigpaths",
+      "label": "getConfigPaths()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "checker_getlocaldevpath",
+      "label": "getLocalDevPath()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L80"
+    },
+    {
+      "id": "checker_findpackagejsonup",
+      "label": "findPackageJsonUp()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L105"
+    },
+    {
+      "id": "checker_getlocaldevversion",
+      "label": "getLocalDevVersion()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L134"
+    },
+    {
+      "id": "checker_getcurrentruntimepackagejsonpath",
+      "label": "getCurrentRuntimePackageJsonPath()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L152"
+    },
+    {
+      "id": "checker_findpluginentry",
+      "label": "findPluginEntry()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L167"
+    },
+    {
+      "id": "checker_getcachedversion",
+      "label": "getCachedVersion()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L201"
+    },
+    {
+      "id": "checker_updatepinnedversion",
+      "label": "updatePinnedVersion()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L241"
+    },
+    {
+      "id": "checker_getlatestversion",
+      "label": "getLatestVersion()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L287"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "src_hooks_auto_update_checker_cli_config_manager",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "src_hooks_auto_update_checker_utils_logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "src_hooks_auto_update_checker_constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "src_hooks_auto_update_checker_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_isstring",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getpluginentries",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_isprereleaseversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_isdisttag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_extractchannel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getconfigpaths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getlocaldevpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_findpackagejsonup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getlocaldevversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getcurrentruntimepackagejsonpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_findpluginentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getcachedversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_updatepinnedversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_checker_ts",
+      "target": "checker_getlatestversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L287",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_extractchannel",
+      "target": "checker_isdisttag",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_extractchannel",
+      "target": "checker_isprereleaseversion",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_getlocaldevpath",
+      "target": "checker_getconfigpaths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_getlocaldevpath",
+      "target": "checker_getpluginentries",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_getlocaldevversion",
+      "target": "checker_getlocaldevpath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_getlocaldevversion",
+      "target": "checker_findpackagejsonup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_getcurrentruntimepackagejsonpath",
+      "target": "checker_findpackagejsonup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_findpluginentry",
+      "target": "checker_getconfigpaths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_findpluginentry",
+      "target": "checker_getpluginentries",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "checker_getcachedversion",
+      "target": "checker_getcurrentruntimepackagejsonpath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L205",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "checker_getpluginentries",
+      "callee": "isArray",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "checker_getpluginentries",
+      "callee": "filter",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "checker_isprereleaseversion",
+      "callee": "includes",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "checker_isdisttag",
+      "callee": "test",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "checker_extractchannel",
+      "callee": "split",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "checker_extractchannel",
+      "callee": "match",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "checker_getconfigpaths",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "checker_getconfigpaths",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L83"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "stripJsonComments",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "startsWith",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "includes",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "fileURLToPath",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "checker_getlocaldevpath",
+      "callee": "replace",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "statSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "isDirectory",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "dirname",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L115"
+    },
+    {
+      "caller_nid": "checker_findpackagejsonup",
+      "callee": "dirname",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L121"
+    },
+    {
+      "caller_nid": "checker_getlocaldevversion",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "checker_getlocaldevversion",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "checker_getcurrentruntimepackagejsonpath",
+      "callee": "dirname",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L156"
+    },
+    {
+      "caller_nid": "checker_getcurrentruntimepackagejsonpath",
+      "callee": "fileURLToPath",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L156"
+    },
+    {
+      "caller_nid": "checker_getcurrentruntimepackagejsonpath",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "checker_findpluginentry",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L170"
+    },
+    {
+      "caller_nid": "checker_findpluginentry",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L171"
+    },
+    {
+      "caller_nid": "checker_findpluginentry",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L172"
+    },
+    {
+      "caller_nid": "checker_findpluginentry",
+      "callee": "stripJsonComments",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L172"
+    },
+    {
+      "caller_nid": "checker_findpluginentry",
+      "callee": "startsWith",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L179"
+    },
+    {
+      "caller_nid": "checker_findpluginentry",
+      "callee": "slice",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L180"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L206"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L207"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L208"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L219"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L220"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L221"
+    },
+    {
+      "caller_nid": "checker_getcachedversion",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L228"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L247"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L249"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "replace",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L253"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "test",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L256"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L257"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "replace",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L264"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "writeFileSync",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L270"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L271"
+    },
+    {
+      "caller_nid": "checker_updatepinnedversion",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L276"
+    },
+    {
+      "caller_nid": "checker_getlatestversion",
+      "callee": "setTimeout",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L291"
+    },
+    {
+      "caller_nid": "checker_getlatestversion",
+      "callee": "fetch",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L294"
+    },
+    {
+      "caller_nid": "checker_getlatestversion",
+      "callee": "json",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L301"
+    },
+    {
+      "caller_nid": "checker_getlatestversion",
+      "callee": "clearTimeout",
+      "source_file": "src/hooks/auto-update-checker/checker.ts",
+      "source_location": "L306"
+    }
+  ]
+}

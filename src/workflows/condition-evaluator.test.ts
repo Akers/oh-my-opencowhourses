@@ -11,15 +11,13 @@ const outputs: Record<string, string> = {
 
 describe('evaluateCondition', () => {
   it('evaluates string equality', () => {
-    expect(
-      evaluateCondition("$step1.output == 'hello world'", outputs),
-    ).toBe(true);
+    expect(evaluateCondition("$step1.output == 'hello world'", outputs)).toBe(
+      true,
+    );
   });
 
   it('evaluates string inequality', () => {
-    expect(
-      evaluateCondition("$step1.output != 'goodbye'", outputs),
-    ).toBe(true);
+    expect(evaluateCondition("$step1.output != 'goodbye'", outputs)).toBe(true);
   });
 
   it('evaluates dot notation field access', () => {
@@ -29,12 +27,8 @@ describe('evaluateCondition', () => {
   });
 
   it('evaluates numeric comparison', () => {
-    expect(
-      evaluateCondition("$step2.output.count > '40'", outputs),
-    ).toBe(true);
-    expect(
-      evaluateCondition("$step2.output.count < '50'", outputs),
-    ).toBe(true);
+    expect(evaluateCondition("$step2.output.count > '40'", outputs)).toBe(true);
+    expect(evaluateCondition("$step2.output.count < '50'", outputs)).toBe(true);
   });
 
   it('evaluates compound AND', () => {
@@ -56,24 +50,17 @@ describe('evaluateCondition', () => {
   });
 
   it('returns false for non-matching condition', () => {
-    expect(
-      evaluateCondition("$step1.output == 'wrong'", outputs),
-    ).toBe(false);
+    expect(evaluateCondition("$step1.output == 'wrong'", outputs)).toBe(false);
   });
 
   it('returns false when referenced node not found', () => {
     expect(
-      evaluateCondition(
-        "$nonexistent.output == 'something'",
-        outputs,
-      ),
+      evaluateCondition("$nonexistent.output == 'something'", outputs),
     ).toBe(false);
   });
 
   it('returns false for malformed expression (fail-closed)', () => {
-    expect(evaluateCondition('not a valid expression', outputs)).toBe(
-      false,
-    );
+    expect(evaluateCondition('not a valid expression', outputs)).toBe(false);
   });
 
   it('returns undefined (skip) when condition is undefined', () => {
@@ -81,20 +68,20 @@ describe('evaluateCondition', () => {
   });
 
   it('evaluates >= operator', () => {
-    expect(
-      evaluateCondition("$step2.output.count >= '42'", outputs),
-    ).toBe(true);
-    expect(
-      evaluateCondition("$step2.output.count >= '43'", outputs),
-    ).toBe(false);
+    expect(evaluateCondition("$step2.output.count >= '42'", outputs)).toBe(
+      true,
+    );
+    expect(evaluateCondition("$step2.output.count >= '43'", outputs)).toBe(
+      false,
+    );
   });
 
   it('evaluates <= operator', () => {
-    expect(
-      evaluateCondition("$step2.output.count <= '42'", outputs),
-    ).toBe(true);
-    expect(
-      evaluateCondition("$step2.output.count <= '41'", outputs),
-    ).toBe(false);
+    expect(evaluateCondition("$step2.output.count <= '42'", outputs)).toBe(
+      true,
+    );
+    expect(evaluateCondition("$step2.output.count <= '41'", outputs)).toBe(
+      false,
+    );
   });
 });

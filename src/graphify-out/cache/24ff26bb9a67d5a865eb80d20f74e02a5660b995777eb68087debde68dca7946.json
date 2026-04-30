@@ -1,0 +1,857 @@
+{
+  "nodes": [
+    {
+      "id": "src_multiplexer_session_manager_ts",
+      "label": "session-manager.ts",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager",
+      "label": "MultiplexerSessionManager",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "label": ".onSessionCreated()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_onsessionstatus",
+      "label": ".onSessionStatus()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L193"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_onsessiondeleted",
+      "label": ".onSessionDeleted()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L210"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_startpolling",
+      "label": ".startPolling()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L224"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_stoppolling",
+      "label": ".stopPolling()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L234"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_pollsessions",
+      "label": ".pollSessions()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L242"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_closesession",
+      "label": ".closeSession()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L291"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_respawnifknown",
+      "label": ".respawnIfKnown()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L333"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_istrackedorspawning",
+      "label": ".isTrackedOrSpawning()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L423"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_updatepolling",
+      "label": ".updatePolling()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L427"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_getsessionid",
+      "label": ".getSessionId()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L435"
+    },
+    {
+      "id": "session_manager_multiplexersessionmanager_cleanup",
+      "label": ".cleanup()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L439"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_multiplexer_session_manager_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_ts",
+      "target": "src_multiplexer_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_ts",
+      "target": "src_multiplexer_config_schema",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_ts",
+      "target": "src_multiplexer_multiplexer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_ts",
+      "target": "src_multiplexer_utils_logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_ts",
+      "target": "session_manager_multiplexersessionmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_onsessionstatus",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_onsessiondeleted",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_startpolling",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_stoppolling",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_pollsessions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_closesession",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L291",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_respawnifknown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L333",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_istrackedorspawning",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L423",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_updatepolling",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L427",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_getsessionid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L435",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager",
+      "target": "session_manager_multiplexersessionmanager_cleanup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L439",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "target": "session_manager_multiplexersessionmanager_istrackedorspawning",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "target": "session_manager_multiplexersessionmanager_startpolling",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_onsessionstatus",
+      "target": "session_manager_multiplexersessionmanager_closesession",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_onsessionstatus",
+      "target": "session_manager_multiplexersessionmanager_respawnifknown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_onsessiondeleted",
+      "target": "session_manager_multiplexersessionmanager_getsessionid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_onsessiondeleted",
+      "target": "session_manager_multiplexersessionmanager_closesession",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_pollsessions",
+      "target": "session_manager_multiplexersessionmanager_stoppolling",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L244",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_pollsessions",
+      "target": "session_manager_multiplexersessionmanager_closesession",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_respawnifknown",
+      "target": "session_manager_multiplexersessionmanager_istrackedorspawning",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L338",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_respawnifknown",
+      "target": "session_manager_multiplexersessionmanager_startpolling",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L417",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_updatepolling",
+      "target": "session_manager_multiplexersessionmanager_startpolling",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L429",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_updatepolling",
+      "target": "session_manager_multiplexersessionmanager_stoppolling",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L431",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_multiplexersessionmanager_cleanup",
+      "target": "session_manager_multiplexersessionmanager_stoppolling",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L440",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_constructor",
+      "callee": "toString",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_constructor",
+      "callee": "getMultiplexer",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_constructor",
+      "callee": "isInsideSession",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_constructor",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "get",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "set",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L113"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "add",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "isServerRunning",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L122"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L134"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "catch",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "spawnPane",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L156"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "catch",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L158"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "closePane",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L158"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "now",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L171"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "set",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L172"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L182"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessioncreated",
+      "callee": "delete",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L189"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_onsessiondeleted",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L217"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_startpolling",
+      "callee": "setInterval",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L227"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_startpolling",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L231"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_stoppolling",
+      "callee": "clearInterval",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L236"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_stoppolling",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L238"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_pollsessions",
+      "callee": "status",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L249"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_pollsessions",
+      "callee": "now",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L255"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_pollsessions",
+      "callee": "entries",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L259"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_pollsessions",
+      "callee": "push",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L276"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_pollsessions",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L287"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_pollsessions",
+      "callee": "String",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L287"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "delete",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L296"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "get",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L299"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "get",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L302"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "delete",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L305"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L307"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "finally",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L313"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "catch",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L313"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "then",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L313"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "closePane",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L313"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_closesession",
+      "callee": "set",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L329"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "get",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L335"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "get",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L342"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "add",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L345"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "isServerRunning",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L348"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L350"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L360"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L360"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L364"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "catch",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L373"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "spawnPane",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L373"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L385"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L386"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "catch",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L388"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "closePane",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L388"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "now",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L401"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "set",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L402"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L412"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_respawnifknown",
+      "callee": "delete",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L419"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_istrackedorspawning",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L424"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_istrackedorspawning",
+      "callee": "has",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L424"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "all",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L443"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "values",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L443"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L447"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "map",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L451"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "from",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L451"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "values",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L451"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "all",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L459"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "clear",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L460"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "clear",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L463"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "clear",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L464"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "clear",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L465"
+    },
+    {
+      "caller_nid": "session_manager_multiplexersessionmanager_cleanup",
+      "callee": "log",
+      "source_file": "src/multiplexer/session-manager.ts",
+      "source_location": "L467"
+    }
+  ]
+}

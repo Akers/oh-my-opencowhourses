@@ -1,0 +1,190 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_subagent_depth_ts",
+      "label": "subagent-depth.ts",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker",
+      "label": "SubagentDepthTracker",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker_maxdepth",
+      "label": ".maxDepth()",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker_getdepth",
+      "label": ".getDepth()",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker_registerchild",
+      "label": ".registerChild()",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L39"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker_cleanup",
+      "label": ".cleanup()",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "subagent_depth_subagentdepthtracker_cleanupall",
+      "label": ".cleanupAll()",
+      "file_type": "code",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L72"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_subagent_depth_ts",
+      "target": "src_utils_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_subagent_depth_ts",
+      "target": "src_utils_logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_subagent_depth_ts",
+      "target": "subagent_depth_subagentdepthtracker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker",
+      "target": "subagent_depth_subagentdepthtracker_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker",
+      "target": "subagent_depth_subagentdepthtracker_maxdepth",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker",
+      "target": "subagent_depth_subagentdepthtracker_getdepth",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker",
+      "target": "subagent_depth_subagentdepthtracker_registerchild",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker",
+      "target": "subagent_depth_subagentdepthtracker_cleanup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker",
+      "target": "subagent_depth_subagentdepthtracker_cleanupall",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "subagent_depth_subagentdepthtracker_registerchild",
+      "target": "subagent_depth_subagentdepthtracker_getdepth",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "subagent_depth_subagentdepthtracker_getdepth",
+      "callee": "get",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "subagent_depth_subagentdepthtracker_registerchild",
+      "callee": "log",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "subagent_depth_subagentdepthtracker_registerchild",
+      "callee": "set",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "subagent_depth_subagentdepthtracker_registerchild",
+      "callee": "log",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "subagent_depth_subagentdepthtracker_cleanup",
+      "callee": "delete",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "subagent_depth_subagentdepthtracker_cleanupall",
+      "callee": "clear",
+      "source_file": "src/utils/subagent-depth.ts",
+      "source_location": "L73"
+    }
+  ]
+}

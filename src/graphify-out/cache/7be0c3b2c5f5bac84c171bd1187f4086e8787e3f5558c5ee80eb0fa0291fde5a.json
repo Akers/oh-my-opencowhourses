@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "id": "src_cli_skills_ts",
+      "label": "skills.ts",
+      "file_type": "code",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "skills_installskill",
+      "label": "installSkill()",
+      "file_type": "code",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "skills_getskillpermissionsforagent",
+      "label": "getSkillPermissionsForAgent()",
+      "file_type": "code",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L116"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_cli_skills_ts",
+      "target": "node_child_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_skills_ts",
+      "target": "src_cli_custom_skills",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_skills_ts",
+      "target": "skills_installskill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_skills_ts",
+      "target": "skills_getskillpermissionsforagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "spawnSync",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "log",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L92"
+    },
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "log",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L94"
+    },
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "split",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "spawnSync",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "warn",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "skills_installskill",
+      "callee": "error",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "startsWith",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "slice",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L132"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "includes",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "includes",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L144"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "includes",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L153"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "includes",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "includes",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L163"
+    },
+    {
+      "caller_nid": "skills_getskillpermissionsforagent",
+      "callee": "includes",
+      "source_file": "src/cli/skills.ts",
+      "source_location": "L164"
+    }
+  ]
+}

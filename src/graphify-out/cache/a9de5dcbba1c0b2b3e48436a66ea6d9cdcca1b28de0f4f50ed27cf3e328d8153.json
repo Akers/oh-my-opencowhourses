@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_polling_test_ts",
+      "label": "polling.test.ts",
+      "file_type": "code",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "polling_test_fetchfn",
+      "label": "fetchFn()",
+      "file_type": "code",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "polling_test_isstable",
+      "label": "isStable()",
+      "file_type": "code",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "src_utils_polling",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_fetchfn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_polling_test_ts",
+      "target": "polling_test_isstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L147",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "polling_test_fetchfn",
+      "callee": "abort",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "polling_test_isstable",
+      "callee": "max",
+      "source_file": "src/utils/polling.test.ts",
+      "source_location": "L152"
+    }
+  ]
+}

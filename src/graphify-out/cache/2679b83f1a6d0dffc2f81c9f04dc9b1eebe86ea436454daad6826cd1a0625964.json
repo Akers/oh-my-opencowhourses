@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_test_helpers_ts",
+      "label": "test-helpers.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_helpers_createtempdir",
+      "label": "createTempDir()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "test_helpers_writefixture",
+      "label": "writeFixture()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "test_helpers_readtext",
+      "label": "readText()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "test_helpers_applypatch",
+      "label": "applyPatch()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L45"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "promises",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "node_os",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "src_hooks_apply_patch_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "test_helpers_createtempdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "test_helpers_writefixture",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "test_helpers_readtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_test_helpers_ts",
+      "target": "test_helpers_applypatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "test_helpers_createtempdir",
+      "callee": "mkdtemp",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "test_helpers_createtempdir",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "test_helpers_createtempdir",
+      "callee": "tmpdir",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "test_helpers_createtempdir",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L24"
+    },
+    {
+      "caller_nid": "test_helpers_writefixture",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "test_helpers_writefixture",
+      "callee": "mkdir",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "test_helpers_writefixture",
+      "callee": "dirname",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "test_helpers_writefixture",
+      "callee": "writeFile",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "test_helpers_readtext",
+      "callee": "readFile",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "test_helpers_readtext",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "test_helpers_applypatch",
+      "callee": "preparePatchChanges",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "test_helpers_applypatch",
+      "callee": "applyPreparedChanges",
+      "source_file": "src/hooks/apply-patch/test-helpers.ts",
+      "source_location": "L51"
+    }
+  ]
+}

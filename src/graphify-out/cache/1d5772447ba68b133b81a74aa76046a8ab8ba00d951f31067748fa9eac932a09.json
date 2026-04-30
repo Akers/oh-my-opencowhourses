@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "id": "src_interview_manager_ts",
+      "label": "manager.ts",
+      "file_type": "code",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "manager_createinterviewmanager",
+      "label": "createInterviewManager()",
+      "file_type": "code",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "manager_statetoentry",
+      "label": "stateToEntry()",
+      "file_type": "code",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L426"
+    },
+    {
+      "id": "manager_pushstateviahttp",
+      "label": "pushStateViaHttp()",
+      "file_type": "code",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L450"
+    },
+    {
+      "id": "manager_registerinterviewviahttp",
+      "label": "registerInterviewViaHttp()",
+      "file_type": "code",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L468"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_interview_manager_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "src_interview_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "src_interview_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "src_interview_dashboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "src_interview_server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "src_interview_service",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "src_interview_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "manager_createinterviewmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "manager_statetoentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L426",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "manager_pushstateviahttp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L450",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_manager_ts",
+      "target": "manager_registerinterviewviahttp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L468",
+      "weight": 1.0
+    },
+    {
+      "source": "manager_pushstateviahttp",
+      "target": "manager_statetoentry",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L456",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "manager_createinterviewmanager",
+      "callee": "createInterviewService",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "manager_createinterviewmanager",
+      "callee": "join",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "manager_createinterviewmanager",
+      "callee": "createInterviewServer",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "manager_createinterviewmanager",
+      "callee": "setBaseUrlResolver",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "manager_createinterviewmanager",
+      "callee": "createInterviewService",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "manager_createinterviewmanager",
+      "callee": "(async () => {\n    try {\n      dashboard = await tryBecomeDashboard({\n        port: dashboardPort,\n        outputFolder,\n        sessionClient: ctx.client.session,\n      });\n\n      if (dashboard) {\n        // \u2500\u2500 We ARE the dashboard \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n        isDashboard = true;\n        dashboardBaseUrl = `http://127.0.0.1:${dashboardPort}`;\n        authToken = dashboard.authToken;\n\n        service.setBaseUrlResolver(() => Promise.resolve(dashboardBaseUrl));\n\n        // State push: in-process, directly into dashboard cache\n        service.setStatePushCallback((id, state) => {\n          dashboard?.pushState(stateToEntry(id, state));\n        });\n\n        // Interview created: register in dashboard cache immediately\n        service.setOnInterviewCreated((interview) => {\n          dashboard?.pushState({\n            interviewId: interview.id,\n            sessionID: interview.sessionID,\n            idea: interview.idea,\n            mode: 'awaiting-agent',\n            summary: 'Interview created.',\n            title: interview.idea,\n            questions: [],\n            pendingAnswers: null,\n            lastUpdatedAt: Date.now(),\n            filePath: interview.markdownPath,\n            nudgeAction: null,\n          });\n          // Register session directory for file scanning\n          dashboard?.registerSession({\n            sessionID: interview.sessionID,\n            directory: ctx.directory,\n            pid: process.pid,\n            registeredAt: Date.now(),\n          });\n        });\n\n        log('[interview] dashboard mode: we are the dashboard', {\n          port: dashboardPort,\n        });\n\n        // Self-register: dashboard process is also a session with its\n        // own directory. This triggers rebuildFromFiles() for failover.\n        dashboard.registerSession({\n          sessionID: `dashboard-self-${process.pid}`,\n          directory: ctx.directory,\n          pid: process.pid,\n          registeredAt: Date.now(),\n        });\n\n        // Discover directories from past sessions via SDK\n        await dashboard.discoverSessionDirectories();\n        await dashboard.refreshFiles();\n      } else {\n        // \u2500\u2500 We're a SESSION \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n        const probe = await probeDashboard(dashboardPort);\n        if (!probe.alive) {\n          // Brief retry \u2014 dashboard may still be starting\n          await new Promise((r) => setTimeout(r, 500));\n          const retry = await probeDashboard(dashboardPort);\n          if (!retry.alive) {\n            log(\n              '[interview] dashboard mode: no dashboard found, falling back to per-session server',\n              {\n                port: dashboardPort,\n              },\n            );\n            // Fall back to per-session mode \u2014 start our own server\n            const perSessionServer = createInterviewServer({\n              getState: async (interviewId) =>\n                service.getInterviewState(interviewId),\n              listInterviewFiles: async () => service.listInterviewFiles(),\n              listInterviews: () => service.listInterviews(),\n              submitAnswers: async (interviewId, answers) =>\n                service.submitAnswers(interviewId, answers),\n              handleNudgeAction: async (interviewId, action) =>\n                service.handleNudgeAction(interviewId, action),\n              outputFolder: path.join(ctx.directory, outputFolder),\n              port: 0, // random port\n            });\n            service.setBaseUrlResolver(() => perSessionServer.ensureStarted());\n            isDashboard = false;\n            initDone = true;\n            return;\n          }\n        }\n\n        dashboardBaseUrl = `http://127.0.0.1:${dashboardPort}`;\n        const auth = await readDashboardAuthFile(dashboardPort);\n        authToken = auth?.token ?? '';\n\n        service.setBaseUrlResolver(() => Promise.resolve(dashboardBaseUrl));\n\n        // State push: HTTP to dashboard\n        service.setStatePushCallback((id, state) => {\n          pushStateViaHttp(dashboardBaseUrl, authToken, id, state).catch(\n            (err) => {\n              log('[interview] failed to push state to dashboard', {\n                error: err instanceof Error ? err.message : String(err),\n              });\n            },\n          );\n        });\n\n        // Interview created: POST to dashboard so it appears immediately\n        service.setOnInterviewCreated((interview) => {\n          registerInterviewViaHttp(\n            dashboardBaseUrl,\n            authToken,\n            interview,\n          ).catch((err) => {\n            log('[interview] failed to register interview with dashboard', {\n              error: err instanceof Error ? err.message : String(err),\n            });\n          });\n        });\n\n        log('[interview] dashboard mode: we are a session', {\n          port: dashboardPort,\n        });\n\n        // Start fallback poll timer now that we know we're in session mode\n        startFallbackTimer();\n      }\n    } catch (err) {\n      log('[interview] dashboard mode init failed', {\n        error: err instanceof Error ? err.message : String(err),\n      });\n    } finally {\n      initDone = true;\n    }\n  })",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "manager_statetoentry",
+      "callee": "map",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L437"
+    },
+    {
+      "caller_nid": "manager_statetoentry",
+      "callee": "now",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L444"
+    },
+    {
+      "caller_nid": "manager_pushstateviahttp",
+      "callee": "fetch",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L457"
+    },
+    {
+      "caller_nid": "manager_pushstateviahttp",
+      "callee": "stringify",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L462"
+    },
+    {
+      "caller_nid": "manager_pushstateviahttp",
+      "callee": "timeout",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L463"
+    },
+    {
+      "caller_nid": "manager_registerinterviewviahttp",
+      "callee": "fetch",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L473"
+    },
+    {
+      "caller_nid": "manager_registerinterviewviahttp",
+      "callee": "stringify",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L476"
+    },
+    {
+      "caller_nid": "manager_registerinterviewviahttp",
+      "callee": "timeout",
+      "source_file": "src/interview/manager.ts",
+      "source_location": "L481"
+    }
+  ]
+}

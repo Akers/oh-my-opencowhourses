@@ -1,0 +1,803 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_prepared_changes_ts",
+      "label": "prepared-changes.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "prepared_changes_isnormalizedabsolutepath",
+      "label": "isNormalizedAbsolutePath()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "prepared_changes_assertpreparedchangepath",
+      "label": "assertPreparedChangePath()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "prepared_changes_assertpreparedchangescontract",
+      "label": "assertPreparedChangesContract()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "prepared_changes_preparepatchchanges",
+      "label": "preparePatchChanges()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L93"
+    },
+    {
+      "id": "prepared_changes_readsnapshot",
+      "label": "readSnapshot()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L187"
+    },
+    {
+      "id": "prepared_changes_restoresnapshot",
+      "label": "restoreSnapshot()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L213"
+    },
+    {
+      "id": "prepared_changes_createtempsiblingpath",
+      "label": "createTempSiblingPath()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L226"
+    },
+    {
+      "id": "prepared_changes_writefileatomically",
+      "label": "writeFileAtomically()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L233"
+    },
+    {
+      "id": "prepared_changes_getsnapshotmode",
+      "label": "getSnapshotMode()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L252"
+    },
+    {
+      "id": "prepared_changes_assertpreparedapplypreconditions",
+      "label": "assertPreparedApplyPreconditions()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L256"
+    },
+    {
+      "id": "prepared_changes_applypreparedchanges",
+      "label": "applyPreparedChanges()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L332"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "node_crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "promises",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "src_hooks_apply_patch_errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "src_hooks_apply_patch_execution_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_isnormalizedabsolutepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_assertpreparedchangepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_assertpreparedchangescontract",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_preparepatchchanges",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_readsnapshot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_restoresnapshot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L213",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_createtempsiblingpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L226",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_writefileatomically",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L233",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_getsnapshotmode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_assertpreparedapplypreconditions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_prepared_changes_ts",
+      "target": "prepared_changes_applypreparedchanges",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L332",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_assertpreparedchangepath",
+      "target": "prepared_changes_isnormalizedabsolutepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_assertpreparedchangescontract",
+      "target": "prepared_changes_assertpreparedchangepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_restoresnapshot",
+      "target": "prepared_changes_writefileatomically",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_writefileatomically",
+      "target": "prepared_changes_createtempsiblingpath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_applypreparedchanges",
+      "target": "prepared_changes_assertpreparedchangescontract",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L335",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_applypreparedchanges",
+      "target": "prepared_changes_readsnapshot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L341",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_applypreparedchanges",
+      "target": "prepared_changes_assertpreparedapplypreconditions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L353",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_applypreparedchanges",
+      "target": "prepared_changes_writefileatomically",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_applypreparedchanges",
+      "target": "prepared_changes_getsnapshotmode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L371",
+      "weight": 1.0
+    },
+    {
+      "source": "prepared_changes_applypreparedchanges",
+      "target": "prepared_changes_restoresnapshot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L388",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "prepared_changes_isnormalizedabsolutepath",
+      "callee": "isAbsolute",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "prepared_changes_isnormalizedabsolutepath",
+      "callee": "normalize",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangepath",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangepath",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangescontract",
+      "callee": "entries",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangescontract",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangescontract",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangescontract",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangescontract",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedchangescontract",
+      "callee": "createApplyPatchValidationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L87"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "createPatchExecutionContext",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "resolve",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "assertPreparedPathMissing",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "stageAddedText",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L115"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "getPreparedFileState",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L120"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L122"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "getPreparedFileState",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L127"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "createApplyPatchVerificationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L129"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "resolve",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "assertPreparedPathMissing",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "resolvePreparedUpdate",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L140"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L147"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L156"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L165"
+    },
+    {
+      "caller_nid": "prepared_changes_preparepatchchanges",
+      "callee": "ensureApplyPatchError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L175"
+    },
+    {
+      "caller_nid": "prepared_changes_readsnapshot",
+      "callee": "stat",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L189"
+    },
+    {
+      "caller_nid": "prepared_changes_readsnapshot",
+      "callee": "isDirectory",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L190"
+    },
+    {
+      "caller_nid": "prepared_changes_readsnapshot",
+      "callee": "createApplyPatchInternalError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L191"
+    },
+    {
+      "caller_nid": "prepared_changes_readsnapshot",
+      "callee": "readFile",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L198"
+    },
+    {
+      "caller_nid": "prepared_changes_readsnapshot",
+      "callee": "isMissingPathError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L202"
+    },
+    {
+      "caller_nid": "prepared_changes_readsnapshot",
+      "callee": "createApplyPatchInternalError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L206"
+    },
+    {
+      "caller_nid": "prepared_changes_restoresnapshot",
+      "callee": "rm",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L218"
+    },
+    {
+      "caller_nid": "prepared_changes_restoresnapshot",
+      "callee": "mkdir",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L222"
+    },
+    {
+      "caller_nid": "prepared_changes_restoresnapshot",
+      "callee": "dirname",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L222"
+    },
+    {
+      "caller_nid": "prepared_changes_createtempsiblingpath",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L227"
+    },
+    {
+      "caller_nid": "prepared_changes_createtempsiblingpath",
+      "callee": "dirname",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L228"
+    },
+    {
+      "caller_nid": "prepared_changes_createtempsiblingpath",
+      "callee": "basename",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L229"
+    },
+    {
+      "caller_nid": "prepared_changes_createtempsiblingpath",
+      "callee": "randomUUID",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L229"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "mkdir",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L241"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "dirname",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L241"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "writeFile",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L242"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "chmod",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L244"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "rename",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L246"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "catch",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L248"
+    },
+    {
+      "caller_nid": "prepared_changes_writefileatomically",
+      "callee": "rm",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L248"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "pathState",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L272"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "createApplyPatchVerificationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L273"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L278"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "pathState",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L284"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "createApplyPatchVerificationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L285"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L290"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "pathState",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L294"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "createApplyPatchVerificationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L295"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "pathState",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L303"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "createApplyPatchVerificationError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L304"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L309"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L310"
+    },
+    {
+      "caller_nid": "prepared_changes_assertpreparedapplypreconditions",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L314"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "has",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L340"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L341"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "has",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L347"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L349"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "unlink",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L363"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "get",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L371"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "unlink",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L373"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "get",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L380"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "reverse",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L386"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "entries",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L386"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L390"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "getErrorMessage",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L390"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "getErrorMessage",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L395"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L395"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "getErrorMessage",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L396"
+    },
+    {
+      "caller_nid": "prepared_changes_applypreparedchanges",
+      "callee": "createApplyPatchInternalError",
+      "source_file": "src/hooks/apply-patch/prepared-changes.ts",
+      "source_location": "L398"
+    }
+  ]
+}

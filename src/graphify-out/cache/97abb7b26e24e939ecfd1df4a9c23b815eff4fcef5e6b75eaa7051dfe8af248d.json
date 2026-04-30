@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_codec_test_ts",
+      "label": "codec.test.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/codec.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_codec_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_test_ts",
+      "target": "src_hooks_apply_patch_codec",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_codec_test_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/codec.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

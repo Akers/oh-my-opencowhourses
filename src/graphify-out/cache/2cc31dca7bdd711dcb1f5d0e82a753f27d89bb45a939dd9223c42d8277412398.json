@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_task_session_manager_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_isagentname",
+      "label": "isAgentName()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "index_isobjectrecord",
+      "label": "isObjectRecord()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "index_extractpath",
+      "label": "extractPath()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L73"
+    },
+    {
+      "id": "index_normalizepath",
+      "label": "normalizePath()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "index_extractreadfiles",
+      "label": "extractReadFiles()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "index_countreadlines",
+      "label": "countReadLines()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L104"
+    },
+    {
+      "id": "index_createtasksessionmanagerhook",
+      "label": "createTaskSessionManagerHook()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L112"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "src_hooks_task_session_manager_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "src_hooks_task_session_manager_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_isagentname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_isobjectrecord",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_extractpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_normalizepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_extractreadfiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_countreadlines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_ts",
+      "target": "index_createtasksessionmanagerhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "index_extractreadfiles",
+      "target": "index_extractpath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "index_extractreadfiles",
+      "target": "index_normalizepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "index_extractreadfiles",
+      "target": "index_countreadlines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_isagentname",
+      "callee": "has",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "index_extractpath",
+      "callee": "exec",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "index_normalizepath",
+      "callee": "relative",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "index_normalizepath",
+      "callee": "startsWith",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "index_normalizepath",
+      "callee": "isAbsolute",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "index_extractreadfiles",
+      "callee": "now",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "index_countreadlines",
+      "callee": "matchAll",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "index_countreadlines",
+      "callee": "add",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "index_countreadlines",
+      "callee": "Number",
+      "source_file": "src/hooks/task-session-manager/index.ts",
+      "source_location": "L107"
+    }
+  ]
+}

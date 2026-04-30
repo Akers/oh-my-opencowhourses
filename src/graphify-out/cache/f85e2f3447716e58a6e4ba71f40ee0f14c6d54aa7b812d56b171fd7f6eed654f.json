@@ -1,0 +1,501 @@
+{
+  "nodes": [
+    {
+      "id": "src_council_council_manager_ts",
+      "label": "council-manager.ts",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "council_manager_councilmanager",
+      "label": "CouncilManager",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "council_manager_councilmanager_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "council_manager_councilmanager_getdeprecatedfields",
+      "label": ".getDeprecatedFields()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L60"
+    },
+    {
+      "id": "council_manager_councilmanager_getlegacymastermodel",
+      "label": ".getLegacyMasterModel()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "council_manager_councilmanager_runcouncil",
+      "label": ".runCouncil()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "council_manager_councilmanager_sendstartnotification",
+      "label": ".sendStartNotification()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L200"
+    },
+    {
+      "id": "council_manager_councilmanager_runagentsession",
+      "label": ".runAgentSession()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L225"
+    },
+    {
+      "id": "council_manager_councilmanager_runcouncillors",
+      "label": ".runCouncillors()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L318"
+    },
+    {
+      "id": "council_manager_councilmanager_runcouncillorwithretry",
+      "label": ".runCouncillorWithRetry()",
+      "file_type": "code",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L402"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_agents_council",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_config_constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_config_council_schema",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_utils_logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_utils_session",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "src_council_utils_subagent_depth",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_council_council_manager_ts",
+      "target": "council_manager_councilmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_getdeprecatedfields",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_getlegacymastermodel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_runcouncil",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_sendstartnotification",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L200",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_runagentsession",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L225",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_runcouncillors",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager",
+      "target": "council_manager_councilmanager_runcouncillorwithretry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L402",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager_runcouncil",
+      "target": "council_manager_councilmanager_sendstartnotification",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager_runcouncil",
+      "target": "council_manager_councilmanager_runcouncillors",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager_runcouncillors",
+      "target": "council_manager_councilmanager_runcouncillorwithretry",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "council_manager_councilmanager_runcouncillorwithretry",
+      "target": "council_manager_councilmanager_runagentsession",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L427",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "getDepth",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "join",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "keys",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L115"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "keys",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "keys",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "keys",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "catch",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "filter",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L161"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L165"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "formatCouncillorResults",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncil",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L183"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_sendstartnotification",
+      "callee": "join",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L204"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_sendstartnotification",
+      "callee": "prompt",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L209"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "parseModelReference",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L235"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "create",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L243"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "registerChild",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L258"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "promptWithTimeout",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L282"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "extractSessionResult",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L292"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "catch",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L306"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "abort",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L306"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runagentsession",
+      "callee": "cleanup",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L308"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "entries",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L326"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "push",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L338"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "map",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L351"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "allSettled",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L372"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "push",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L379"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "push",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L381"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillors",
+      "callee": "String",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L388"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillorwithretry",
+      "callee": "shortModelLabel",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L416"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillorwithretry",
+      "callee": "log",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L421"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillorwithretry",
+      "callee": "formatCouncillorPrompt",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L432"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillorwithretry",
+      "callee": "String",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L445"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillorwithretry",
+      "callee": "includes",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L448"
+    },
+    {
+      "caller_nid": "council_manager_councilmanager_runcouncillorwithretry",
+      "callee": "includes",
+      "source_file": "src/council/council-manager.ts",
+      "source_location": "L455"
+    }
+  ]
+}

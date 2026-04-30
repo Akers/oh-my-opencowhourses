@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_ast_grep_cli_ts",
+      "label": "cli.ts",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "cli_getastgreppath",
+      "label": "getAstGrepPath()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "cli_startbackgroundinit",
+      "label": "startBackgroundInit()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L56"
+    },
+    {
+      "id": "cli_runsg",
+      "label": "runSg()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "cli_iscliavailable",
+      "label": "isCliAvailable()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L249"
+    },
+    {
+      "id": "cli_ensurecliavailable",
+      "label": "ensureCliAvailable()",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L254"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "src_tools_ast_grep_utils_compat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "src_tools_ast_grep_constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "src_tools_ast_grep_downloader",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "src_tools_ast_grep_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "cli_getastgreppath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "cli_startbackgroundinit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "cli_runsg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "cli_iscliavailable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_cli_ts",
+      "target": "cli_ensurecliavailable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L254",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_startbackgroundinit",
+      "target": "cli_getastgreppath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_runsg",
+      "target": "cli_getastgreppath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "cli_ensurecliavailable",
+      "target": "cli_getastgreppath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L255",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "cli_getastgreppath",
+      "callee": "getSgCliPath",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "cli_getastgreppath",
+      "callee": "existsSync",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "cli_getastgreppath",
+      "callee": "(async () => {\n    const syncPath = findSgCliPathSync();\n    if (syncPath && existsSync(syncPath)) {\n      setSgCliPath(syncPath);\n      return syncPath;\n    }\n\n    const downloadedPath = await ensureAstGrepBinary();\n    if (downloadedPath) {\n      setSgCliPath(downloadedPath);\n      return downloadedPath;\n    }\n\n    return null;\n  })",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "cli_startbackgroundinit",
+      "callee": "catch",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "String",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "push",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L97"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "getSgCliPath",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "existsSync",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "crossSpawn",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "race",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "stdout",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "stderr",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L129"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "includes",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L133"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "includes",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L146"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "includes",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L147"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "ensureAstGrepBinary",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "setSgCliPath",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "trim",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L176"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "includes",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L177"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "trim",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L180"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "trim",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L185"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "trim",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L191"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "substring",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L197"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "parse",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L202"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "lastIndexOf",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L206"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "lastIndexOf",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L208"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "substring",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L213"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "parse",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L214"
+    },
+    {
+      "caller_nid": "cli_runsg",
+      "callee": "slice",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L234"
+    },
+    {
+      "caller_nid": "cli_iscliavailable",
+      "callee": "findSgCliPathSync",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L250"
+    },
+    {
+      "caller_nid": "cli_iscliavailable",
+      "callee": "existsSync",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L251"
+    },
+    {
+      "caller_nid": "cli_ensurecliavailable",
+      "callee": "existsSync",
+      "source_file": "src/tools/ast-grep/cli.ts",
+      "source_location": "L256"
+    }
+  ]
+}

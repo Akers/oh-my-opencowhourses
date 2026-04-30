@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_auto_update_checker_cache_ts",
+      "label": "cache.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "cache_removefrombunlock",
+      "label": "removeFromBunLock()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "cache_ensuredependencyversion",
+      "label": "ensureDependencyVersion()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "cache_removeinstalledpackage",
+      "label": "removeInstalledPackage()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L102"
+    },
+    {
+      "id": "cache_resolveinstallcontext",
+      "label": "resolveInstallContext()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L114"
+    },
+    {
+      "id": "cache_preparepackageupdate",
+      "label": "preparePackageUpdate()",
+      "file_type": "code",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L147"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "src_hooks_auto_update_checker_cli_config_manager",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "src_hooks_auto_update_checker_utils_logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "src_hooks_auto_update_checker_checker",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "src_hooks_auto_update_checker_constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "cache_removefrombunlock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "cache_ensuredependencyversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "cache_removeinstalledpackage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "cache_resolveinstallcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_auto_update_checker_cache_ts",
+      "target": "cache_preparepackageupdate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "cache_preparepackageupdate",
+      "target": "cache_resolveinstallcontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "cache_preparepackageupdate",
+      "target": "cache_ensuredependencyversion",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "cache_preparepackageupdate",
+      "target": "cache_removeinstalledpackage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "cache_preparepackageupdate",
+      "target": "cache_removefrombunlock",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L172",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "stripJsonComments",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "writeFileSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "stringify",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "cache_removefrombunlock",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "readFileSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "parse",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "stripJsonComments",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "writeFileSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "stringify",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "cache_ensuredependencyversion",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L94"
+    },
+    {
+      "caller_nid": "cache_removeinstalledpackage",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "cache_removeinstalledpackage",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "cache_removeinstalledpackage",
+      "callee": "rmSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "cache_removeinstalledpackage",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "dirname",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "dirname",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "basename",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L122"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "basename",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "dirname",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L126"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L127"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "join",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "cache_resolveinstallcontext",
+      "callee": "existsSync",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "cache_preparepackageupdate",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "cache_preparepackageupdate",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "cache_preparepackageupdate",
+      "callee": "log",
+      "source_file": "src/hooks/auto-update-checker/cache.ts",
+      "source_location": "L185"
+    }
+  ]
+}

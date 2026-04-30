@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "src_config_model_resolution_test_ts",
+      "label": "model-resolution.test.ts",
+      "file_type": "code",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "model_resolution_test_resolvemodelfromarray",
+      "label": "resolveModelFromArray()",
+      "file_type": "code",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "model_resolution_test_resolvewithchains",
+      "label": "resolveWithChains()",
+      "file_type": "code",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L78"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_config_model_resolution_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_model_resolution_test_ts",
+      "target": "src_config_config_schema",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_model_resolution_test_ts",
+      "target": "model_resolution_test_resolvemodelfromarray",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_model_resolution_test_ts",
+      "target": "model_resolution_test_resolvewithchains",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "model_resolution_test_resolvewithchains",
+      "callee": "push",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "model_resolution_test_resolvewithchains",
+      "callee": "map",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "model_resolution_test_resolvewithchains",
+      "callee": "has",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "model_resolution_test_resolvewithchains",
+      "callee": "add",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L103"
+    },
+    {
+      "caller_nid": "model_resolution_test_resolvewithchains",
+      "callee": "push",
+      "source_file": "src/config/model-resolution.test.ts",
+      "source_location": "L104"
+    }
+  ]
+}

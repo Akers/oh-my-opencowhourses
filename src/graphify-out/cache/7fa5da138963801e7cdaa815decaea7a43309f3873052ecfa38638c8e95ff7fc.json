@@ -1,0 +1,370 @@
+{
+  "nodes": [
+    {
+      "id": "src_config_loader_ts",
+      "label": "loader.ts",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "loader_loadconfigfrompath",
+      "label": "loadConfigFromPath()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "loader_findconfigpath",
+      "label": "findConfigPath()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "loader_findconfigpathindirs",
+      "label": "findConfigPathInDirs()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "loader_deepmerge",
+      "label": "deepMerge()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L91"
+    },
+    {
+      "id": "loader_loadpluginconfig",
+      "label": "loadPluginConfig()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L137"
+    },
+    {
+      "id": "loader_loadagentprompt",
+      "label": "loadAgentPrompt()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L217"
+    },
+    {
+      "id": "loader_migratetmuxtomultiplexer",
+      "label": "migrateTmuxToMultiplexer()",
+      "file_type": "code",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L280"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_config_loader_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "src_config_cli_config_io",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "src_config_cli_paths",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "src_config_schema",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_loadconfigfrompath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_findconfigpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_findconfigpathindirs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_deepmerge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_loadpluginconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_loadagentprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_ts",
+      "target": "loader_migratetmuxtomultiplexer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L280",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_findconfigpathindirs",
+      "target": "loader_findconfigpath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadpluginconfig",
+      "target": "loader_findconfigpathindirs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadpluginconfig",
+      "target": "loader_findconfigpath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadpluginconfig",
+      "target": "loader_loadconfigfrompath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadpluginconfig",
+      "target": "loader_deepmerge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadpluginconfig",
+      "target": "loader_migratetmuxtomultiplexer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L177",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "readFileSync",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L20"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "parse",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "stripJsonComments",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "safeParse",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L23"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "warn",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "warn",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "format",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "loader_loadconfigfrompath",
+      "callee": "warn",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L39"
+    },
+    {
+      "caller_nid": "loader_findconfigpath",
+      "callee": "existsSync",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "loader_findconfigpath",
+      "callee": "existsSync",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "loader_findconfigpathindirs",
+      "callee": "join",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "loader_deepmerge",
+      "callee": "keys",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "loader_deepmerge",
+      "callee": "isArray",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L108"
+    },
+    {
+      "caller_nid": "loader_deepmerge",
+      "callee": "isArray",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "loader_loadpluginconfig",
+      "callee": "getConfigSearchDirs",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "loader_loadpluginconfig",
+      "callee": "join",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "loader_loadpluginconfig",
+      "callee": "join",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L196"
+    },
+    {
+      "caller_nid": "loader_loadpluginconfig",
+      "callee": "keys",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L196"
+    },
+    {
+      "caller_nid": "loader_loadpluginconfig",
+      "callee": "warn",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L198"
+    },
+    {
+      "caller_nid": "loader_loadagentprompt",
+      "callee": "test",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L225"
+    },
+    {
+      "caller_nid": "loader_loadagentprompt",
+      "callee": "flatMap",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L226"
+    },
+    {
+      "caller_nid": "loader_loadagentprompt",
+      "callee": "getConfigSearchDirs",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L226"
+    },
+    {
+      "caller_nid": "loader_loadagentprompt",
+      "callee": "readFirstPrompt",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L258"
+    },
+    {
+      "caller_nid": "loader_loadagentprompt",
+      "callee": "readFirstPrompt",
+      "source_file": "src/config/loader.ts",
+      "source_location": "L264"
+    }
+  ]
+}

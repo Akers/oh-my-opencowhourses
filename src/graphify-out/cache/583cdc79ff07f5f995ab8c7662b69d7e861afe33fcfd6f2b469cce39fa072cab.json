@@ -1,0 +1,819 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_session_manager_ts",
+      "label": "session-manager.ts",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "session_manager_aliasprefix",
+      "label": "aliasPrefix()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "session_manager_normalizewhitespace",
+      "label": "normalizeWhitespace()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "session_manager_derivetasksessionlabel",
+      "label": "deriveTaskSessionLabel()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "session_manager_sessionmanager",
+      "label": "SessionManager",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L79"
+    },
+    {
+      "id": "session_manager_sessionmanager_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L90"
+    },
+    {
+      "id": "session_manager_sessionmanager_remember",
+      "label": ".remember()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L101"
+    },
+    {
+      "id": "session_manager_sessionmanager_markused",
+      "label": ".markUsed()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L139"
+    },
+    {
+      "id": "session_manager_sessionmanager_resolve",
+      "label": ".resolve()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L150"
+    },
+    {
+      "id": "session_manager_sessionmanager_drop",
+      "label": ".drop()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L155"
+    },
+    {
+      "id": "session_manager_sessionmanager_droptask",
+      "label": ".dropTask()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L165"
+    },
+    {
+      "id": "session_manager_sessionmanager_taskids",
+      "label": ".taskIds()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L174"
+    },
+    {
+      "id": "session_manager_sessionmanager_addcontext",
+      "label": ".addContext()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L186"
+    },
+    {
+      "id": "session_manager_sessionmanager_clearparent",
+      "label": ".clearParent()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L214"
+    },
+    {
+      "id": "session_manager_sessionmanager_formatforprompt",
+      "label": ".formatForPrompt()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L219"
+    },
+    {
+      "id": "session_manager_sessionmanager_getagentgroup",
+      "label": ".getAgentGroup()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L267"
+    },
+    {
+      "id": "session_manager_sessionmanager_setagentgroup",
+      "label": ".setAgentGroup()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L287"
+    },
+    {
+      "id": "session_manager_sessionmanager_nextalias",
+      "label": ".nextAlias()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L307"
+    },
+    {
+      "id": "session_manager_sessionmanager_trimgroup",
+      "label": ".trimGroup()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L319"
+    },
+    {
+      "id": "session_manager_sessionmanager_trimcontextfiles",
+      "label": ".trimContextFiles()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L326"
+    },
+    {
+      "id": "session_manager_sessionmanager_nextorder",
+      "label": ".nextOrder()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L338"
+    },
+    {
+      "id": "session_manager_formatcontextfiles",
+      "label": "formatContextFiles()",
+      "file_type": "code",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L344"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_session_manager_ts",
+      "target": "src_utils_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_manager_ts",
+      "target": "session_manager_aliasprefix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_manager_ts",
+      "target": "session_manager_normalizewhitespace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_manager_ts",
+      "target": "session_manager_derivetasksessionlabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_manager_ts",
+      "target": "session_manager_sessionmanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_remember",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_markused",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_resolve",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_drop",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_droptask",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_taskids",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_addcontext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_clearparent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_formatforprompt",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L219",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_getagentgroup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L267",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_setagentgroup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L287",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_nextalias",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L307",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_trimgroup",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L319",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_trimcontextfiles",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager",
+      "target": "session_manager_sessionmanager_nextorder",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L338",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_manager_ts",
+      "target": "session_manager_formatcontextfiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L344",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_derivetasksessionlabel",
+      "target": "session_manager_normalizewhitespace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_remember",
+      "target": "session_manager_sessionmanager_nextorder",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_remember",
+      "target": "session_manager_sessionmanager_getagentgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_remember",
+      "target": "session_manager_sessionmanager_nextalias",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_remember",
+      "target": "session_manager_sessionmanager_trimgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_markused",
+      "target": "session_manager_sessionmanager_getagentgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_markused",
+      "target": "session_manager_sessionmanager_nextorder",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_resolve",
+      "target": "session_manager_sessionmanager_getagentgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_drop",
+      "target": "session_manager_sessionmanager_getagentgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_drop",
+      "target": "session_manager_sessionmanager_setagentgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_droptask",
+      "target": "session_manager_sessionmanager_setagentgroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_addcontext",
+      "target": "session_manager_sessionmanager_trimcontextfiles",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "session_manager_sessionmanager_nextalias",
+      "target": "session_manager_aliasprefix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L316",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "session_manager_normalizewhitespace",
+      "callee": "trim",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "session_manager_normalizewhitespace",
+      "callee": "replace",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "session_manager_derivetasksessionlabel",
+      "callee": "slice",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "session_manager_derivetasksessionlabel",
+      "callee": "find",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "session_manager_derivetasksessionlabel",
+      "callee": "map",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "session_manager_derivetasksessionlabel",
+      "callee": "split",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "session_manager_derivetasksessionlabel",
+      "callee": "slice",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_remember",
+      "callee": "find",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L116"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_remember",
+      "callee": "push",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L134"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_markused",
+      "callee": "find",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_resolve",
+      "callee": "find",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L152"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_drop",
+      "callee": "filter",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L159"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_droptask",
+      "callee": "entries",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L166"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_droptask",
+      "callee": "entries",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L167"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_droptask",
+      "callee": "filter",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L168"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_taskids",
+      "callee": "values",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L176"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_taskids",
+      "callee": "values",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L177"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_taskids",
+      "callee": "add",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L179"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "values",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L189"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "values",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L190"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "find",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L191"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "map",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L195"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L198"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "max",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L200"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "max",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L201"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_addcontext",
+      "callee": "push",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L207"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_clearparent",
+      "callee": "delete",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L215"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_clearparent",
+      "callee": "delete",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L216"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L220"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "map",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L223"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "sort",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L223"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "filter",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L223"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "map",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L223"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "entries",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L223"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_formatforprompt",
+      "callee": "join",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L259"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_getagentgroup",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L272"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_getagentgroup",
+      "callee": "set",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L275"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_getagentgroup",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L278"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_getagentgroup",
+      "callee": "set",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L281"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_setagentgroup",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L292"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_setagentgroup",
+      "callee": "delete",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L296"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_setagentgroup",
+      "callee": "delete",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L298"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_setagentgroup",
+      "callee": "delete",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L299"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_setagentgroup",
+      "callee": "set",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L304"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_nextalias",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L308"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_nextalias",
+      "callee": "set",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L311"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_nextalias",
+      "callee": "get",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L314"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_nextalias",
+      "callee": "set",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L315"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_trimgroup",
+      "callee": "sort",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L320"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_trimcontextfiles",
+      "callee": "slice",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L332"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_trimcontextfiles",
+      "callee": "sort",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L332"
+    },
+    {
+      "caller_nid": "session_manager_sessionmanager_trimcontextfiles",
+      "callee": "filter",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L332"
+    },
+    {
+      "caller_nid": "session_manager_formatcontextfiles",
+      "callee": "sort",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L348"
+    },
+    {
+      "caller_nid": "session_manager_formatcontextfiles",
+      "callee": "filter",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L348"
+    },
+    {
+      "caller_nid": "session_manager_formatcontextfiles",
+      "callee": "slice",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L351"
+    },
+    {
+      "caller_nid": "session_manager_formatcontextfiles",
+      "callee": "map",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L353"
+    },
+    {
+      "caller_nid": "session_manager_formatcontextfiles",
+      "callee": "join",
+      "source_file": "src/utils/session-manager.ts",
+      "source_location": "L356"
+    }
+  ]
+}

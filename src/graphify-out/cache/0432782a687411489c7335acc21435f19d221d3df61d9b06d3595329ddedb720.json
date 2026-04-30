@@ -1,0 +1,493 @@
+{
+  "nodes": [
+    {
+      "id": "src_cli_paths_ts",
+      "label": "paths.ts",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "paths_getdefaultopencodeconfigdir",
+      "label": "getDefaultOpenCodeConfigDir()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "paths_getcustomopencodeconfigdir",
+      "label": "getCustomOpenCodeConfigDir()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "paths_getconfigdir",
+      "label": "getConfigDir()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "paths_getconfigsearchdirs",
+      "label": "getConfigSearchDirs()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "paths_getopencodeconfigpaths",
+      "label": "getOpenCodeConfigPaths()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "paths_getconfigjson",
+      "label": "getConfigJson()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "paths_getconfigjsonc",
+      "label": "getConfigJsonc()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "paths_getliteconfig",
+      "label": "getLiteConfig()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "paths_getliteconfigjsonc",
+      "label": "getLiteConfigJsonc()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "paths_getexistingliteconfigpath",
+      "label": "getExistingLiteConfigPath()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L73"
+    },
+    {
+      "id": "paths_getexistingconfigpath",
+      "label": "getExistingConfigPath()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L83"
+    },
+    {
+      "id": "paths_ensureconfigdir",
+      "label": "ensureConfigDir()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L93"
+    },
+    {
+      "id": "paths_ensureopencodeconfigdir",
+      "label": "ensureOpenCodeConfigDir()",
+      "file_type": "code",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L103"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_cli_paths_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "node_os",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getdefaultopencodeconfigdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getcustomopencodeconfigdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getconfigdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getconfigsearchdirs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getopencodeconfigpaths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getconfigjson",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getconfigjsonc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getliteconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getliteconfigjsonc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getexistingliteconfigpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_getexistingconfigpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_ensureconfigdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_paths_ts",
+      "target": "paths_ensureopencodeconfigdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getconfigdir",
+      "target": "paths_getcustomopencodeconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getconfigdir",
+      "target": "paths_getdefaultopencodeconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getconfigsearchdirs",
+      "target": "paths_getcustomopencodeconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getconfigsearchdirs",
+      "target": "paths_getdefaultopencodeconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getopencodeconfigpaths",
+      "target": "paths_getdefaultopencodeconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getconfigjson",
+      "target": "paths_getopencodeconfigpaths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getconfigjsonc",
+      "target": "paths_getopencodeconfigpaths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getliteconfig",
+      "target": "paths_getconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getliteconfigjsonc",
+      "target": "paths_getconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getexistingliteconfigpath",
+      "target": "paths_getliteconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getexistingliteconfigpath",
+      "target": "paths_getliteconfigjsonc",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getexistingconfigpath",
+      "target": "paths_getconfigjson",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_getexistingconfigpath",
+      "target": "paths_getconfigjsonc",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_ensureconfigdir",
+      "target": "paths_getconfigdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "paths_ensureopencodeconfigdir",
+      "target": "paths_getconfigjson",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "paths_getdefaultopencodeconfigdir",
+      "callee": "join",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "paths_getdefaultopencodeconfigdir",
+      "callee": "homedir",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L8"
+    },
+    {
+      "caller_nid": "paths_getdefaultopencodeconfigdir",
+      "callee": "join",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L10"
+    },
+    {
+      "caller_nid": "paths_getcustomopencodeconfigdir",
+      "callee": "trim",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "paths_getconfigsearchdirs",
+      "callee": "filter",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "paths_getopencodeconfigpaths",
+      "callee": "join",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "paths_getopencodeconfigpaths",
+      "callee": "join",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "paths_getliteconfig",
+      "callee": "join",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "paths_getliteconfigjsonc",
+      "callee": "join",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "paths_getexistingliteconfigpath",
+      "callee": "existsSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "paths_getexistingliteconfigpath",
+      "callee": "existsSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "paths_getexistingconfigpath",
+      "callee": "existsSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "paths_getexistingconfigpath",
+      "callee": "existsSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "paths_ensureconfigdir",
+      "callee": "existsSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L95"
+    },
+    {
+      "caller_nid": "paths_ensureconfigdir",
+      "callee": "mkdirSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "paths_ensureopencodeconfigdir",
+      "callee": "dirname",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L104"
+    },
+    {
+      "caller_nid": "paths_ensureopencodeconfigdir",
+      "callee": "existsSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "paths_ensureopencodeconfigdir",
+      "callee": "mkdirSync",
+      "source_file": "src/cli/paths.ts",
+      "source_location": "L106"
+    }
+  ]
+}

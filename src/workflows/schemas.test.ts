@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'bun:test';
 import {
   AgentNodeSchema,
+  ApprovalNodeSchema,
   AutoAgentNodeSchema,
   BashNodeSchema,
   CancelNodeSchema,
   LoopNodeSchema,
-  ApprovalNodeSchema,
   PromptNodeSchema,
   WorkflowDefinitionSchema,
 } from './schemas';

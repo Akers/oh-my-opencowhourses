@@ -1,0 +1,514 @@
+{
+  "nodes": [
+    {
+      "id": "src_interview_dashboard_ts",
+      "label": "dashboard.ts",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboard_getauthfilepath",
+      "label": "getAuthFilePath()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "dashboard_writeauthfile",
+      "label": "writeAuthFile()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "dashboard_removeauthfile",
+      "label": "removeAuthFile()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L59"
+    },
+    {
+      "id": "dashboard_readdashboardauthfile",
+      "label": "readDashboardAuthFile()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "dashboard_jitterms",
+      "label": "jitterMs()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L97"
+    },
+    {
+      "id": "dashboard_deduprecovered",
+      "label": "dedupRecovered()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L106"
+    },
+    {
+      "id": "dashboard_hasliveforslug",
+      "label": "hasLiveForSlug()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L124"
+    },
+    {
+      "id": "dashboard_createdashboardserver",
+      "label": "createDashboardServer()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L163"
+    },
+    {
+      "id": "dashboard_probedashboard",
+      "label": "probeDashboard()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1139"
+    },
+    {
+      "id": "dashboard_trybecomedashboard",
+      "label": "tryBecomeDashboard()",
+      "file_type": "code",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1162"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "node_crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "promises",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "node_http",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "node_os",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "src_interview_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "src_interview_document",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "src_interview_helpers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "src_interview_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "src_interview_ui",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_getauthfilepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_writeauthfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_removeauthfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_readdashboardauthfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_jitterms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_deduprecovered",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_hasliveforslug",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_createdashboardserver",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_probedashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1139",
+      "weight": 1.0
+    },
+    {
+      "source": "src_interview_dashboard_ts",
+      "target": "dashboard_trybecomedashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1162",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboard_writeauthfile",
+      "target": "dashboard_getauthfilepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboard_removeauthfile",
+      "target": "dashboard_getauthfilepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboard_readdashboardauthfile",
+      "target": "dashboard_getauthfilepath",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboard_trybecomedashboard",
+      "target": "dashboard_probedashboard",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1168",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboard_trybecomedashboard",
+      "target": "dashboard_createdashboardserver",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1174",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "dashboard_getauthfilepath",
+      "callee": "join",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "dashboard_getauthfilepath",
+      "callee": "homedir",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "dashboard_getauthfilepath",
+      "callee": "join",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "dashboard_writeauthfile",
+      "callee": "dirname",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "dashboard_writeauthfile",
+      "callee": "mkdirSync",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "dashboard_writeauthfile",
+      "callee": "writeFileSync",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "dashboard_writeauthfile",
+      "callee": "stringify",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "dashboard_writeauthfile",
+      "callee": "now",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "dashboard_removeauthfile",
+      "callee": "unlinkSync",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "dashboard_readdashboardauthfile",
+      "callee": "readFile",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "dashboard_readdashboardauthfile",
+      "callee": "parse",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "dashboard_readdashboardauthfile",
+      "callee": "kill",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "dashboard_readdashboardauthfile",
+      "callee": "unlinkSync",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L83"
+    },
+    {
+      "caller_nid": "dashboard_jitterms",
+      "callee": "floor",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "dashboard_jitterms",
+      "callee": "random",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "dashboard_deduprecovered",
+      "callee": "startsWith",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "dashboard_deduprecovered",
+      "callee": "extractResumeSlug",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "dashboard_deduprecovered",
+      "callee": "has",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "dashboard_deduprecovered",
+      "callee": "delete",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L115"
+    },
+    {
+      "caller_nid": "dashboard_hasliveforslug",
+      "callee": "some",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "dashboard_hasliveforslug",
+      "callee": "values",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "dashboard_createdashboardserver",
+      "callee": "toString",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L193"
+    },
+    {
+      "caller_nid": "dashboard_createdashboardserver",
+      "callee": "randomBytes",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L193"
+    },
+    {
+      "caller_nid": "dashboard_createdashboardserver",
+      "callee": "setInterval",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L211"
+    },
+    {
+      "caller_nid": "dashboard_createdashboardserver",
+      "callee": "unref",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L219"
+    },
+    {
+      "caller_nid": "dashboard_probedashboard",
+      "callee": "fetch",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1143"
+    },
+    {
+      "caller_nid": "dashboard_probedashboard",
+      "callee": "timeout",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1144"
+    },
+    {
+      "caller_nid": "dashboard_probedashboard",
+      "callee": "json",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1147"
+    },
+    {
+      "caller_nid": "dashboard_trybecomedashboard",
+      "callee": "start",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1176"
+    },
+    {
+      "caller_nid": "dashboard_trybecomedashboard",
+      "callee": "String",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1179"
+    },
+    {
+      "caller_nid": "dashboard_trybecomedashboard",
+      "callee": "includes",
+      "source_file": "src/interview/dashboard.ts",
+      "source_location": "L1180"
+    }
+  ]
+}

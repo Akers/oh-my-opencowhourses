@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "id": "src_cli_custom_skills_ts",
+      "label": "custom-skills.ts",
+      "file_type": "code",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "custom_skills_getcustomskillsdir",
+      "label": "getCustomSkillsDir()",
+      "file_type": "code",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "custom_skills_copydirrecursive",
+      "label": "copyDirRecursive()",
+      "file_type": "code",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "custom_skills_installcustomskill",
+      "label": "installCustomSkill()",
+      "file_type": "code",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L84"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "src_cli_paths",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "custom_skills_getcustomskillsdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "custom_skills_copydirrecursive",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_custom_skills_ts",
+      "target": "custom_skills_installcustomskill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "custom_skills_installcustomskill",
+      "target": "custom_skills_getcustomskillsdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "custom_skills_installcustomskill",
+      "target": "custom_skills_copydirrecursive",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "custom_skills_getcustomskillsdir",
+      "callee": "join",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "custom_skills_getcustomskillsdir",
+      "callee": "getConfigDir",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "existsSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "mkdirSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "readdirSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "join",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "join",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "statSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "isDirectory",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "dirname",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "existsSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "mkdirSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "custom_skills_copydirrecursive",
+      "callee": "copyFileSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "custom_skills_installcustomskill",
+      "callee": "fileURLToPath",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "custom_skills_installcustomskill",
+      "callee": "join",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L87"
+    },
+    {
+      "caller_nid": "custom_skills_installcustomskill",
+      "callee": "join",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "custom_skills_installcustomskill",
+      "callee": "existsSync",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "custom_skills_installcustomskill",
+      "callee": "error",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L92"
+    },
+    {
+      "caller_nid": "custom_skills_installcustomskill",
+      "callee": "error",
+      "source_file": "src/cli/custom-skills.ts",
+      "source_location": "L101"
+    }
+  ]
+}

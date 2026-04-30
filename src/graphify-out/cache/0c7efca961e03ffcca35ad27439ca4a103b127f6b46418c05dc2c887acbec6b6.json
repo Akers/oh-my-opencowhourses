@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_smartfetch_binary_ts",
+      "label": "binary.ts",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "binary_extensionformime",
+      "label": "extensionForMime()",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "binary_buildbinaryresultmessage",
+      "label": "buildBinaryResultMessage()",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "binary_savebinary",
+      "label": "saveBinary()",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L26"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_smartfetch_binary_ts",
+      "target": "promises",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_binary_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_binary_ts",
+      "target": "src_tools_smartfetch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_binary_ts",
+      "target": "binary_extensionformime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_binary_ts",
+      "target": "binary_buildbinaryresultmessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_binary_ts",
+      "target": "binary_savebinary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "binary_savebinary",
+      "target": "binary_extensionformime",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "binary_extensionformime",
+      "callee": "toLowerCase",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "binary_extensionformime",
+      "callee": "trim",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "binary_extensionformime",
+      "callee": "split",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "binary_buildbinaryresultmessage",
+      "callee": "toUpperCase",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "binary_savebinary",
+      "callee": "mkdir",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "binary_savebinary",
+      "callee": "now",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "binary_savebinary",
+      "callee": "parse",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "binary_savebinary",
+      "callee": "join",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "binary_savebinary",
+      "callee": "writeFile",
+      "source_file": "src/tools/smartfetch/binary.ts",
+      "source_location": "L43"
+    }
+  ]
+}

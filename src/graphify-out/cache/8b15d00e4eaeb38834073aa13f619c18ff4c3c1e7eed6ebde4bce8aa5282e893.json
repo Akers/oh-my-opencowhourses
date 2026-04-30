@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_errors_ts",
+      "label": "errors.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "errors_applypatcherror",
+      "label": "ApplyPatchError",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "errors_applypatcherror_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "errors_geterrormessage",
+      "label": "getErrorMessage()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "errors_createapplypatchblockederror",
+      "label": "createApplyPatchBlockedError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "errors_createapplypatchvalidationerror",
+      "label": "createApplyPatchValidationError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "errors_createapplypatchverificationerror",
+      "label": "createApplyPatchVerificationError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "errors_createapplypatchinternalerror",
+      "label": "createApplyPatchInternalError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "errors_isapplypatcherror",
+      "label": "isApplyPatchError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "errors_isapplypatchblockederror",
+      "label": "isApplyPatchBlockedError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "errors_isapplypatchvalidationerror",
+      "label": "isApplyPatchValidationError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L75"
+    },
+    {
+      "id": "errors_isapplypatchverificationerror",
+      "label": "isApplyPatchVerificationError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L79"
+    },
+    {
+      "id": "errors_isapplypatchinternalerror",
+      "label": "isApplyPatchInternalError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L83"
+    },
+    {
+      "id": "errors_getapplypatcherrordetails",
+      "label": "getApplyPatchErrorDetails()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "errors_ensureapplypatcherror",
+      "label": "ensureApplyPatchError()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L105"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_applypatcherror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_applypatcherror",
+      "target": "errors_applypatcherror_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_geterrormessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_createapplypatchblockederror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_createapplypatchvalidationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_createapplypatchverificationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_createapplypatchinternalerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_isapplypatcherror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_isapplypatchblockederror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_isapplypatchvalidationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_isapplypatchverificationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_isapplypatchinternalerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_getapplypatcherrordetails",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_errors_ts",
+      "target": "errors_ensureapplypatcherror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_isapplypatchblockederror",
+      "target": "errors_isapplypatcherror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_isapplypatchvalidationerror",
+      "target": "errors_isapplypatcherror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_isapplypatchverificationerror",
+      "target": "errors_isapplypatcherror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_isapplypatchinternalerror",
+      "target": "errors_isapplypatcherror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_getapplypatcherrordetails",
+      "target": "errors_isapplypatcherror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_ensureapplypatcherror",
+      "target": "errors_isapplypatcherror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_ensureapplypatcherror",
+      "target": "errors_createapplypatchinternalerror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "errors_ensureapplypatcherror",
+      "target": "errors_geterrormessage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "errors_applypatcherror_constructor",
+      "callee": "super",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "errors_geterrormessage",
+      "callee": "String",
+      "source_file": "src/hooks/apply-patch/errors.ts",
+      "source_location": "L28"
+    }
+  ]
+}

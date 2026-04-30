@@ -1,0 +1,681 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_rewrite_ts",
+      "label": "rewrite.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "rewrite_normalizetextlineendings",
+      "label": "normalizeTextLineEndings()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "rewrite_splitpatchtextlines",
+      "label": "splitPatchTextLines()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "rewrite_createcollapsedupdatehunk",
+      "label": "createCollapsedUpdateHunk()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L60"
+    },
+    {
+      "id": "rewrite_clonepatchchunks",
+      "label": "clonePatchChunks()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L107"
+    },
+    {
+      "id": "rewrite_minimizemergedchunk",
+      "label": "minimizeMergedChunk()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L118"
+    },
+    {
+      "id": "rewrite_createupdatehunk",
+      "label": "createUpdateHunk()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L174"
+    },
+    {
+      "id": "rewrite_mergesamefileupdategroupchunks",
+      "label": "mergeSameFileUpdateGroupChunks()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L187"
+    },
+    {
+      "id": "rewrite_addcontentsfromfinaltext",
+      "label": "addContentsFromFinalText()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L217"
+    },
+    {
+      "id": "rewrite_renderrewritedependencygroup",
+      "label": "renderRewriteDependencyGroup()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L221"
+    },
+    {
+      "id": "rewrite_combinedependentupdategroup",
+      "label": "combineDependentUpdateGroup()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L253"
+    },
+    {
+      "id": "rewrite_rewritepatch",
+      "label": "rewritePatch()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L299"
+    },
+    {
+      "id": "rewrite_rewritepatchtext",
+      "label": "rewritePatchText()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L489"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "src_hooks_apply_patch_codec",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "src_hooks_apply_patch_errors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "src_hooks_apply_patch_execution_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "src_hooks_apply_patch_resolution",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_normalizetextlineendings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_splitpatchtextlines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_createcollapsedupdatehunk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_clonepatchchunks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_minimizemergedchunk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_createupdatehunk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_mergesamefileupdategroupchunks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_addcontentsfromfinaltext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_renderrewritedependencygroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_combinedependentupdategroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_rewritepatch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L299",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_rewrite_ts",
+      "target": "rewrite_rewritepatchtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L489",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_splitpatchtextlines",
+      "target": "rewrite_normalizetextlineendings",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_createcollapsedupdatehunk",
+      "target": "rewrite_splitpatchtextlines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_createcollapsedupdatehunk",
+      "target": "rewrite_minimizemergedchunk",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_createupdatehunk",
+      "target": "rewrite_clonepatchchunks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_mergesamefileupdategroupchunks",
+      "target": "rewrite_clonepatchchunks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_renderrewritedependencygroup",
+      "target": "rewrite_addcontentsfromfinaltext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_renderrewritedependencygroup",
+      "target": "rewrite_createupdatehunk",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_renderrewritedependencygroup",
+      "target": "rewrite_createcollapsedupdatehunk",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_combinedependentupdategroup",
+      "target": "rewrite_mergesamefileupdategroupchunks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L278",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_rewritepatch",
+      "target": "rewrite_combinedependentupdategroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L401",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_rewritepatch",
+      "target": "rewrite_renderrewritedependencygroup",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L410",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_rewritepatch",
+      "target": "rewrite_createupdatehunk",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L421",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_rewritepatch",
+      "target": "rewrite_clonepatchchunks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L436",
+      "weight": 1.0
+    },
+    {
+      "source": "rewrite_rewritepatchtext",
+      "target": "rewrite_rewritepatch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L495",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "rewrite_normalizetextlineendings",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "rewrite_normalizetextlineendings",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "rewrite_splitpatchtextlines",
+      "callee": "split",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "rewrite_splitpatchtextlines",
+      "callee": "endsWith",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "rewrite_splitpatchtextlines",
+      "callee": "pop",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "rewrite_createcollapsedupdatehunk",
+      "callee": "(() => {\n          try {\n            return deriveNewContentFromText(\n              filePath,\n              baseText,\n              [minimizedChunk],\n              cfg,\n            ) === finalText\n              ? minimizedChunk\n              : collapsedChunk;\n          } catch {\n            // Keep the whole-file chunk when trimming shared context would make\n            // the fallback ambiguous or no longer reproduce the same result.\n            return collapsedChunk;\n          }\n        })",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "rewrite_clonepatchchunks",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L110"
+    },
+    {
+      "caller_nid": "rewrite_minimizemergedchunk",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L157"
+    },
+    {
+      "caller_nid": "rewrite_minimizemergedchunk",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L161"
+    },
+    {
+      "caller_nid": "rewrite_mergesamefileupdategroupchunks",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L199"
+    },
+    {
+      "caller_nid": "rewrite_mergesamefileupdategroupchunks",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L200"
+    },
+    {
+      "caller_nid": "rewrite_mergesamefileupdategroupchunks",
+      "callee": "deriveNewContentFromText",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L204"
+    },
+    {
+      "caller_nid": "rewrite_addcontentsfromfinaltext",
+      "callee": "endsWith",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L218"
+    },
+    {
+      "caller_nid": "rewrite_addcontentsfromfinaltext",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L218"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "createPatchExecutionContext",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L312"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "normalizePatchText",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L313"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "resolve",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L325"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "assertPreparedPathMissing",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L326"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L327"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "clearDependencyGroup",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L328"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "stageAddedText",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L329"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L330"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L335"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "resolve",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L348"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "getPreparedFileState",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L349"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "clearDependencyGroup",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L350"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L351"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L352"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "resolve",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L356"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "get",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L357"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "getPreparedFileState",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L358"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "createApplyPatchVerificationError",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L360"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "resolve",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L366"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "assertPreparedPathMissing",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L369"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "resolvePreparedUpdate",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L372"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L379"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "clearDependencyGroup",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L415"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "clearDependencyGroup",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L417"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L419"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L421"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "clearDependencyGroup",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L422"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "clearDependencyGroup",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L424"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L426"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L442"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L443"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "set",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L450"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "formatPatch",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L462"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "formatPatch",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L481"
+    },
+    {
+      "caller_nid": "rewrite_rewritepatch",
+      "callee": "ensureApplyPatchError",
+      "source_file": "src/hooks/apply-patch/rewrite.ts",
+      "source_location": "L485"
+    }
+  ]
+}

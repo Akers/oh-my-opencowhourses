@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "src_utils_session_ts",
+      "label": "session.ts",
+      "file_type": "code",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "session_shortmodellabel",
+      "label": "shortModelLabel()",
+      "file_type": "code",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "session_parsemodelreference",
+      "label": "parseModelReference()",
+      "file_type": "code",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "session_promptwithtimeout",
+      "label": "promptWithTimeout()",
+      "file_type": "code",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "session_extractsessionresult",
+      "label": "extractSessionResult()",
+      "file_type": "code",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L104"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_utils_session_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_ts",
+      "target": "session_shortmodellabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_ts",
+      "target": "session_parsemodelreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_ts",
+      "target": "session_promptwithtimeout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_session_ts",
+      "target": "session_extractsessionresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "session_shortmodellabel",
+      "callee": "pop",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "session_shortmodellabel",
+      "callee": "split",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "session_parsemodelreference",
+      "callee": "indexOf",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "session_parsemodelreference",
+      "callee": "slice",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "session_parsemodelreference",
+      "callee": "slice",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "session_promptwithtimeout",
+      "callee": "prompt",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "session_promptwithtimeout",
+      "callee": "prompt",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "session_promptwithtimeout",
+      "callee": "catch",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "session_promptwithtimeout",
+      "callee": "race",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "session_promptwithtimeout",
+      "callee": "clearTimeout",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "session_extractsessionresult",
+      "callee": "messages",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "session_extractsessionresult",
+      "callee": "filter",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "session_extractsessionresult",
+      "callee": "push",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L129"
+    },
+    {
+      "caller_nid": "session_extractsessionresult",
+      "callee": "join",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L134"
+    },
+    {
+      "caller_nid": "session_extractsessionresult",
+      "callee": "filter",
+      "source_file": "src/utils/session.ts",
+      "source_location": "L134"
+    }
+  ]
+}

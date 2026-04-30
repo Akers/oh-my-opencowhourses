@@ -1,0 +1,540 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_resolution_ts",
+      "label": "resolution.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "resolution_splitfilelines",
+      "label": "splitFileLines()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "resolution_readfilelineswitheol",
+      "label": "readFileLinesWithEol()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "resolution_readfilelines",
+      "label": "readFileLines()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "resolution_resolvechunkstart",
+      "label": "resolveChunkStart()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L56"
+    },
+    {
+      "id": "resolution_resolveuniqueanchor",
+      "label": "resolveUniqueAnchor()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "resolution_locatechunk",
+      "label": "locateChunk()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L119"
+    },
+    {
+      "id": "resolution_applyhits",
+      "label": "applyHits()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L217"
+    },
+    {
+      "id": "resolution_resolveupdatechunksfromfilelines",
+      "label": "resolveUpdateChunksFromFileLines()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L237"
+    },
+    {
+      "id": "resolution_resolveupdatechunks",
+      "label": "resolveUpdateChunks()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L367"
+    },
+    {
+      "id": "resolution_derivenewcontentfromtext",
+      "label": "deriveNewContentFromText()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L385"
+    },
+    {
+      "id": "resolution_resolveupdatechunksfromtext",
+      "label": "resolveUpdateChunksFromText()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L402"
+    },
+    {
+      "id": "resolution_derivenewcontent",
+      "label": "deriveNewContent()",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L421"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "promises",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "src_hooks_apply_patch_matching",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "src_hooks_apply_patch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_splitfilelines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_readfilelineswitheol",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_readfilelines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_resolvechunkstart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_resolveuniqueanchor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_locatechunk",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_applyhits",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_resolveupdatechunksfromfilelines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_resolveupdatechunks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L367",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_derivenewcontentfromtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L385",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_resolveupdatechunksfromtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L402",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_apply_patch_resolution_ts",
+      "target": "resolution_derivenewcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L421",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_readfilelineswitheol",
+      "target": "resolution_splitfilelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_readfilelines",
+      "target": "resolution_readfilelineswitheol",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunksfromfilelines",
+      "target": "resolution_resolvechunkstart",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunksfromfilelines",
+      "target": "resolution_resolveuniqueanchor",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L280",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunksfromfilelines",
+      "target": "resolution_locatechunk",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L344",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunks",
+      "target": "resolution_resolveupdatechunksfromfilelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L377",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunks",
+      "target": "resolution_readfilelineswitheol",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L379",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_derivenewcontentfromtext",
+      "target": "resolution_resolveupdatechunksfromfilelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L392",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_derivenewcontentfromtext",
+      "target": "resolution_splitfilelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L392",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_derivenewcontentfromtext",
+      "target": "resolution_applyhits",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L394",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunksfromtext",
+      "target": "resolution_resolveupdatechunksfromfilelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L413",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_resolveupdatechunksfromtext",
+      "target": "resolution_splitfilelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L415",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_derivenewcontent",
+      "target": "resolution_resolveupdatechunks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L426",
+      "weight": 1.0
+    },
+    {
+      "source": "resolution_derivenewcontent",
+      "target": "resolution_applyhits",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L431",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "resolution_splitfilelines",
+      "callee": "match",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "resolution_splitfilelines",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "resolution_splitfilelines",
+      "callee": "replace",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "resolution_splitfilelines",
+      "callee": "endsWith",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "resolution_splitfilelines",
+      "callee": "split",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "resolution_splitfilelines",
+      "callee": "pop",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "resolution_readfilelineswitheol",
+      "callee": "readFile",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "resolution_resolvechunkstart",
+      "callee": "seek",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "resolution_resolveuniqueanchor",
+      "callee": "prepareAutoRescueTarget",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "resolution_resolveuniqueanchor",
+      "callee": "matchPreparedAutoRescueComparator",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L88"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "seekMatch",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L128"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "rescueByPrefixSuffix",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L156"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L160"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "prefix",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L167"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "suffix",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L168"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L175"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "rescueByLcs",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L186"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L190"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "slice",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L198"
+    },
+    {
+      "caller_nid": "resolution_locatechunk",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L213"
+    },
+    {
+      "caller_nid": "resolution_applyhits",
+      "callee": "splice",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L226"
+    },
+    {
+      "caller_nid": "resolution_applyhits",
+      "callee": "join",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L233"
+    },
+    {
+      "caller_nid": "resolution_resolveupdatechunksfromfilelines",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L258"
+    },
+    {
+      "caller_nid": "resolution_resolveupdatechunksfromfilelines",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L299"
+    },
+    {
+      "caller_nid": "resolution_resolveupdatechunksfromfilelines",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L323"
+    },
+    {
+      "caller_nid": "resolution_resolveupdatechunksfromfilelines",
+      "callee": "push",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L345"
+    },
+    {
+      "caller_nid": "resolution_resolveupdatechunksfromfilelines",
+      "callee": "sort",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L349"
+    },
+    {
+      "caller_nid": "resolution_derivenewcontentfromtext",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L396"
+    },
+    {
+      "caller_nid": "resolution_derivenewcontent",
+      "callee": "map",
+      "source_file": "src/hooks/apply-patch/resolution.ts",
+      "source_location": "L433"
+    }
+  ]
+}

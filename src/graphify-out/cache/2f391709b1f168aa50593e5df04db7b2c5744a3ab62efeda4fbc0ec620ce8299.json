@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_ast_grep_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/tools/ast-grep/index.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_ast_grep_index_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_ast_grep_index_ts",
+      "target": "src_tools_ast_grep_tools",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/ast-grep/index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

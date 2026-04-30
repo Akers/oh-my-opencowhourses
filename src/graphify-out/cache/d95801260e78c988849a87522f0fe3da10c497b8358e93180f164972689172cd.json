@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_smartfetch_tool_test_ts",
+      "label": "tool.test.ts",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tool_test_createexecutioncontext",
+      "label": "createExecutionContext()",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L4"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_smartfetch_tool_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_tool_test_ts",
+      "target": "src_tools_smartfetch_tool",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_tool_test_ts",
+      "target": "tool_test_createexecutioncontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "tool_test_createexecutioncontext",
+      "callee": "mock",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L6"
+    },
+    {
+      "caller_nid": "tool_test_createexecutioncontext",
+      "callee": "mock",
+      "source_file": "src/tools/smartfetch/tool.test.ts",
+      "source_location": "L7"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "src_agents_council_ts",
+      "label": "council.ts",
+      "file_type": "code",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "council_createcouncilagent",
+      "label": "createCouncilAgent()",
+      "file_type": "code",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "council_formatcouncillorprompt",
+      "label": "formatCouncillorPrompt()",
+      "file_type": "code",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L108"
+    },
+    {
+      "id": "council_formatcouncillorresults",
+      "label": "formatCouncillorResults()",
+      "file_type": "code",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L124"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_agents_council_ts",
+      "target": "src_agents_utils_session",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_council_ts",
+      "target": "src_agents_orchestrator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_council_ts",
+      "target": "council_createcouncilagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_council_ts",
+      "target": "council_formatcouncillorprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_council_ts",
+      "target": "council_formatcouncillorresults",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "council_createcouncilagent",
+      "callee": "resolvePrompt",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "filter",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L134"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "join",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "map",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L138"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "join",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L145"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "map",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L145"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "filter",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L145"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "join",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L153"
+    },
+    {
+      "caller_nid": "council_formatcouncillorresults",
+      "callee": "map",
+      "source_file": "src/agents/council.ts",
+      "source_location": "L153"
+    }
+  ]
+}

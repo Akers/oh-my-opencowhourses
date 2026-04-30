@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_smartfetch_secondary_model_test_ts",
+      "label": "secondary-model.test.ts",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "secondary_model_test_createmockclient",
+      "label": "createMockClient()",
+      "file_type": "code",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_smartfetch_secondary_model_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_secondary_model_test_ts",
+      "target": "src_tools_smartfetch_secondary_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_secondary_model_test_ts",
+      "target": "src_tools_smartfetch_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_smartfetch_secondary_model_test_ts",
+      "target": "secondary_model_test_createmockclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "secondary_model_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "secondary_model_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "secondary_model_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "secondary_model_test_createmockclient",
+      "callee": "mock",
+      "source_file": "src/tools/smartfetch/secondary-model.test.ts",
+      "source_location": "L31"
+    }
+  ]
+}

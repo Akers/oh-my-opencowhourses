@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "src_multiplexer_session_manager_test_ts",
+      "label": "session-manager.test.ts",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "session_manager_test_createmockcontext",
+      "label": "createMockContext()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "session_manager_test_createdeferred",
+      "label": "createDeferred()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L49"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_multiplexer_session_manager_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_test_ts",
+      "target": "src_multiplexer_session_manager",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_test_ts",
+      "target": "session_manager_test_createmockcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_session_manager_test_ts",
+      "target": "session_manager_test_createdeferred",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "session_manager_test_createmockcontext",
+      "callee": "mock",
+      "source_file": "src/multiplexer/session-manager.test.ts",
+      "source_location": "L33"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "id": "src_config_constants_ts",
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "src/config/constants.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "constants_getorchestratableagents",
+      "label": "getOrchestratableAgents()",
+      "file_type": "code",
+      "source_file": "src/config/constants.ts",
+      "source_location": "L50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_config_constants_ts",
+      "target": "constants_getorchestratableagents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/constants.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "constants_getorchestratableagents",
+      "callee": "filter",
+      "source_file": "src/config/constants.ts",
+      "source_location": "L53"
+    }
+  ]
+}

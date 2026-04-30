@@ -683,6 +683,23 @@
       "required": [
         "presets"
       ]
+    },
+    "workflows": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "default": true,
+          "type": "boolean"
+        },
+        "auto_route": {
+          "default": true,
+          "description": "Automatically route user requests to matching workflows",
+          "type": "boolean"
+        },
+        "default_workflow": {
+          "type": "string"
+        }
+      }
     }
   },
   "title": "oh-my-opencode-slim",

@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "src_agents_orchestrator_ts",
+      "label": "orchestrator.ts",
+      "file_type": "code",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "orchestrator_resolveprompt",
+      "label": "resolvePrompt()",
+      "file_type": "code",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "orchestrator_buildorchestratorprompt",
+      "label": "buildOrchestratorPrompt()",
+      "file_type": "code",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L117"
+    },
+    {
+      "id": "orchestrator_createorchestratoragent",
+      "label": "createOrchestratorAgent()",
+      "file_type": "code",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L251"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_agents_orchestrator_ts",
+      "target": "v2",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_orchestrator_ts",
+      "target": "orchestrator_resolveprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_orchestrator_ts",
+      "target": "orchestrator_buildorchestratorprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "src_agents_orchestrator_ts",
+      "target": "orchestrator_createorchestratoragent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L251",
+      "weight": 1.0
+    },
+    {
+      "source": "orchestrator_createorchestratoragent",
+      "target": "orchestrator_buildorchestratorprompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "orchestrator_createorchestratoragent",
+      "target": "orchestrator_resolveprompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L258",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "join",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "map",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "filter",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "entries",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L119"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "join",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "filter",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "join",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L132"
+    },
+    {
+      "caller_nid": "orchestrator_buildorchestratorprompt",
+      "callee": "filter",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L132"
+    },
+    {
+      "caller_nid": "orchestrator_createorchestratoragent",
+      "callee": "isArray",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L270"
+    },
+    {
+      "caller_nid": "orchestrator_createorchestratoragent",
+      "callee": "map",
+      "source_file": "src/agents/orchestrator.ts",
+      "source_location": "L271"
+    }
+  ]
+}

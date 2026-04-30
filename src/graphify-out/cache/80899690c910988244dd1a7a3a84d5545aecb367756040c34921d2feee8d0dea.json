@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_delegate_task_retry_patterns_ts",
+      "label": "patterns.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "patterns_detectdelegatetaskerror",
+      "label": "detectDelegateTaskError()",
+      "file_type": "code",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L59"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_delegate_task_retry_patterns_ts",
+      "target": "patterns_detectdelegatetaskerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L59",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "patterns_detectdelegatetaskerror",
+      "callee": "includes",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "patterns_detectdelegatetaskerror",
+      "callee": "includes",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "patterns_detectdelegatetaskerror",
+      "callee": "includes",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "patterns_detectdelegatetaskerror",
+      "callee": "includes",
+      "source_file": "src/hooks/delegate-task-retry/patterns.ts",
+      "source_location": "L70"
+    }
+  ]
+}

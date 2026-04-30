@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_post_file_tool_nudge_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/post-file-tool-nudge/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_createpostfiletoolnudgehook",
+      "label": "createPostFileToolNudgeHook()",
+      "file_type": "code",
+      "source_file": "src/hooks/post-file-tool-nudge/index.ts",
+      "source_location": "L26"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_post_file_tool_nudge_index_ts",
+      "target": "src_hooks_post_file_tool_nudge_config_constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/post-file-tool-nudge/index.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_post_file_tool_nudge_index_ts",
+      "target": "index_createpostfiletoolnudgehook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/post-file-tool-nudge/index.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

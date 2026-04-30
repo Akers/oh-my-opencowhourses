@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "src_config_runtime_preset_ts",
+      "label": "runtime-preset.ts",
+      "file_type": "code",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "runtime_preset_setactiveruntimepreset",
+      "label": "setActiveRuntimePreset()",
+      "file_type": "code",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "runtime_preset_getactiveruntimepreset",
+      "label": "getActiveRuntimePreset()",
+      "file_type": "code",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "runtime_preset_getpreviousruntimepreset",
+      "label": "getPreviousRuntimePreset()",
+      "file_type": "code",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "runtime_preset_setactiveruntimepresetwithprevious",
+      "label": "setActiveRuntimePresetWithPrevious()",
+      "file_type": "code",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "runtime_preset_rollbackruntimepreset",
+      "label": "rollbackRuntimePreset()",
+      "file_type": "code",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L34"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_config_runtime_preset_ts",
+      "target": "runtime_preset_setactiveruntimepreset",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_runtime_preset_ts",
+      "target": "runtime_preset_getactiveruntimepreset",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_runtime_preset_ts",
+      "target": "runtime_preset_getpreviousruntimepreset",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_runtime_preset_ts",
+      "target": "runtime_preset_setactiveruntimepresetwithprevious",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_runtime_preset_ts",
+      "target": "runtime_preset_rollbackruntimepreset",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/runtime-preset.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

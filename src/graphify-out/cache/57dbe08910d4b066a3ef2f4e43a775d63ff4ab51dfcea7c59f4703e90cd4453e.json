@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "src_config_loader_test_ts",
+      "label": "loader.test.ts",
+      "file_type": "code",
+      "source_file": "src/config/loader.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_config_loader_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_test_ts",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_test_ts",
+      "target": "node_os",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_test_ts",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_config_loader_test_ts",
+      "target": "src_config_loader",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/loader.test.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

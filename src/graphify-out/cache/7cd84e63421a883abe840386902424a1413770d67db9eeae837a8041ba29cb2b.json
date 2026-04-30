@@ -1,0 +1,839 @@
+{
+  "nodes": [
+    {
+      "id": "src_multiplexer_zellij_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_zellijmultiplexer",
+      "label": "ZellijMultiplexer",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "index_zellijmultiplexer_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "index_zellijmultiplexer_isavailable",
+      "label": ".isAvailable()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "index_zellijmultiplexer_isinsidesession",
+      "label": ".isInsideSession()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "index_zellijmultiplexer_spawnpane",
+      "label": ".spawnPane()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "index_zellijmultiplexer_createpaneinagenttab",
+      "label": ".createPaneInAgentTab()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L99"
+    },
+    {
+      "id": "index_zellijmultiplexer_runinpane",
+      "label": ".runInPane()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L199"
+    },
+    {
+      "id": "index_zellijmultiplexer_ensureagenttab",
+      "label": ".ensureAgentTab()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L243"
+    },
+    {
+      "id": "index_zellijmultiplexer_getfirstpaneintab",
+      "label": ".getFirstPaneInTab()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L285"
+    },
+    {
+      "id": "index_zellijmultiplexer_findtabbyname",
+      "label": ".findTabByName()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L311"
+    },
+    {
+      "id": "index_zellijmultiplexer_findtabbynametext",
+      "label": ".findTabByNameText()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L342"
+    },
+    {
+      "id": "index_zellijmultiplexer_getcurrenttabid",
+      "label": ".getCurrentTabId()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L370"
+    },
+    {
+      "id": "index_zellijmultiplexer_listpanes",
+      "label": ".listPanes()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L395"
+    },
+    {
+      "id": "index_zellijmultiplexer_closepane",
+      "label": ".closePane()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L416"
+    },
+    {
+      "id": "index_zellijmultiplexer_applylayout",
+      "label": ".applyLayout()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L447"
+    },
+    {
+      "id": "index_zellijmultiplexer_getbinary",
+      "label": ".getBinary()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L455"
+    },
+    {
+      "id": "index_zellijmultiplexer_findbinary",
+      "label": ".findBinary()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L460"
+    },
+    {
+      "id": "index_buildopencodeattachcommand",
+      "label": "buildOpencodeAttachCommand()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L476"
+    },
+    {
+      "id": "index_buildshelllaunchcommand",
+      "label": "buildShellLaunchCommand()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L492"
+    },
+    {
+      "id": "index_quoteshellarg",
+      "label": "quoteShellArg()",
+      "file_type": "code",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L496"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "src_multiplexer_zellij_config_schema",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "src_multiplexer_zellij_utils_compat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "src_multiplexer_zellij_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "index_zellijmultiplexer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_isavailable",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_isinsidesession",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_spawnpane",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_createpaneinagenttab",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_runinpane",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_ensureagenttab",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_getfirstpaneintab",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L285",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_findtabbyname",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L311",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_findtabbynametext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L342",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_getcurrenttabid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L370",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_listpanes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L395",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_closepane",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L416",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_applylayout",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L447",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_getbinary",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L455",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer",
+      "target": "index_zellijmultiplexer_findbinary",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L460",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "index_buildopencodeattachcommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L476",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "index_buildshelllaunchcommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L492",
+      "weight": 1.0
+    },
+    {
+      "source": "src_multiplexer_zellij_index_ts",
+      "target": "index_quoteshellarg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L496",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_isavailable",
+      "target": "index_zellijmultiplexer_findbinary",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_spawnpane",
+      "target": "index_zellijmultiplexer_getbinary",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_spawnpane",
+      "target": "index_zellijmultiplexer_ensureagenttab",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_spawnpane",
+      "target": "index_zellijmultiplexer_runinpane",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_spawnpane",
+      "target": "index_zellijmultiplexer_createpaneinagenttab",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_createpaneinagenttab",
+      "target": "index_buildopencodeattachcommand",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_createpaneinagenttab",
+      "target": "index_zellijmultiplexer_getcurrenttabid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_runinpane",
+      "target": "index_buildopencodeattachcommand",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_runinpane",
+      "target": "index_buildshelllaunchcommand",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L225",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_ensureagenttab",
+      "target": "index_zellijmultiplexer_findtabbyname",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L248",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_ensureagenttab",
+      "target": "index_zellijmultiplexer_getfirstpaneintab",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_ensureagenttab",
+      "target": "index_zellijmultiplexer_listpanes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_getfirstpaneintab",
+      "target": "index_zellijmultiplexer_getcurrenttabid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L289",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_getfirstpaneintab",
+      "target": "index_zellijmultiplexer_listpanes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L295",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_findtabbyname",
+      "target": "index_zellijmultiplexer_findtabbynametext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L322",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_closepane",
+      "target": "index_zellijmultiplexer_getbinary",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L419",
+      "weight": 1.0
+    },
+    {
+      "source": "index_zellijmultiplexer_getbinary",
+      "target": "index_zellijmultiplexer_isavailable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L456",
+      "weight": 1.0
+    },
+    {
+      "source": "index_buildopencodeattachcommand",
+      "target": "index_quoteshellarg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L484",
+      "weight": 1.0
+    },
+    {
+      "source": "index_buildshelllaunchcommand",
+      "target": "index_quoteshellarg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L493",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "replace",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "slice",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "trim",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L137"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "startsWith",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L140"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L172"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L178"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "trim",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L179"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L183"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "String",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L184"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_createpaneinagenttab",
+      "callee": "startsWith",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L193"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_runinpane",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L214"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_runinpane",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L219"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_runinpane",
+      "callee": "slice",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L220"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_runinpane",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L224"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_runinpane",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L232"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_ensureagenttab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L264"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_ensureagenttab",
+      "callee": "find",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L277"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getfirstpaneintab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L290"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getfirstpaneintab",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L299"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getfirstpaneintab",
+      "callee": "String",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L300"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbyname",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L316"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbyname",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L324"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbyname",
+      "callee": "parse",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L327"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbyname",
+      "callee": "String",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L330"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbynametext",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L347"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbynametext",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L355"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbynametext",
+      "callee": "split",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L356"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbynametext",
+      "callee": "split",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L359"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findtabbynametext",
+      "callee": "trim",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L359"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getcurrenttabid",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L372"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getcurrenttabid",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L383"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getcurrenttabid",
+      "callee": "parse",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L385"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_getcurrenttabid",
+      "callee": "String",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L386"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_listpanes",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L397"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_listpanes",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L405"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_listpanes",
+      "callee": "filter",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L406"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_listpanes",
+      "callee": "map",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L406"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_listpanes",
+      "callee": "slice",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L406"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_listpanes",
+      "callee": "split",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L406"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_closepane",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L424"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_closepane",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L435"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findbinary",
+      "callee": "crossSpawn",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L463"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findbinary",
+      "callee": "stdout",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L468"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findbinary",
+      "callee": "split",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L469"
+    },
+    {
+      "caller_nid": "index_zellijmultiplexer_findbinary",
+      "callee": "trim",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L469"
+    },
+    {
+      "caller_nid": "index_buildopencodeattachcommand",
+      "callee": "join",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L481"
+    },
+    {
+      "caller_nid": "index_buildshelllaunchcommand",
+      "callee": "join",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L493"
+    },
+    {
+      "caller_nid": "index_quoteshellarg",
+      "callee": "replace",
+      "source_file": "src/multiplexer/zellij/index.ts",
+      "source_location": "L497"
+    }
+  ]
+}

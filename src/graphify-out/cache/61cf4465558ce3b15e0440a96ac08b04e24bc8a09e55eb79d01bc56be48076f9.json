@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "src_tools_council_ts",
+      "label": "council.ts",
+      "file_type": "code",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "council_formatmodelcomposition",
+      "label": "formatModelComposition()",
+      "file_type": "code",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "council_createcounciltool",
+      "label": "createCouncilTool()",
+      "file_type": "code",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L33"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_tools_council_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_council_ts",
+      "target": "src_tools_council_council_manager",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_council_ts",
+      "target": "src_tools_utils_session",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_council_ts",
+      "target": "council_formatmodelcomposition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_tools_council_ts",
+      "target": "council_createcounciltool",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "council_formatmodelcomposition",
+      "callee": "join",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "council_formatmodelcomposition",
+      "callee": "map",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "council_createcounciltool",
+      "callee": "tool",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "council_createcounciltool",
+      "callee": "describe",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "council_createcounciltool",
+      "callee": "string",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "council_createcounciltool",
+      "callee": "describe",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "council_createcounciltool",
+      "callee": "optional",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "council_createcounciltool",
+      "callee": "string",
+      "source_file": "src/tools/council.ts",
+      "source_location": "L45"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_task_session_manager_index_test_ts",
+      "label": "index.test.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_test_createhook",
+      "label": "createHook()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "index_test_createmessages",
+      "label": "createMessages()",
+      "file_type": "code",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L26"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_task_session_manager_index_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_test_ts",
+      "target": "src_hooks_task_session_manager_index",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_test_ts",
+      "target": "index_test_createhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_task_session_manager_index_test_ts",
+      "target": "index_test_createmessages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_test_createhook",
+      "callee": "createTaskSessionManagerHook",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L9"
+    },
+    {
+      "caller_nid": "index_test_createhook",
+      "callee": "mock",
+      "source_file": "src/hooks/task-session-manager/index.test.ts",
+      "source_location": "L11"
+    }
+  ]
+}

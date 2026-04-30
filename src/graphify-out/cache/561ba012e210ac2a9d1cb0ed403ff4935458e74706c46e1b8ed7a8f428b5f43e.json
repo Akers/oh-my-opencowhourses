@@ -1,0 +1,273 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_todo_continuation_index_test_ts",
+      "label": "index.test.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_test_createmockcontext",
+      "label": "createMockContext()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "index_test_delay",
+      "label": "delay()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "index_test_hascontinuation",
+      "label": "hasContinuation()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "index_test_contcount",
+      "label": "contCount()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "index_test_contcall",
+      "label": "contCall()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "index_test_usermessages",
+      "label": "userMessages()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L70"
+    },
+    {
+      "id": "index_test_allmessagetext",
+      "label": "allMessageText()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "index_test_creatependingctx",
+      "label": "createPendingCtx()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2451"
+    },
+    {
+      "id": "index_test_createautoenablectx",
+      "label": "createAutoEnableCtx()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2723"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "bun_test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "src_hooks_todo_continuation_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "src_hooks_todo_continuation_index",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "src_hooks_todo_continuation_todo_hygiene",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_createmockcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_delay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_hascontinuation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_contcount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_contcall",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_usermessages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_allmessagetext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_creatependingctx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2451",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_test_ts",
+      "target": "index_test_createautoenablectx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2723",
+      "weight": 1.0
+    },
+    {
+      "source": "index_test_creatependingctx",
+      "target": "index_test_createmockcontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2452",
+      "weight": 1.0
+    },
+    {
+      "source": "index_test_createautoenablectx",
+      "target": "index_test_createmockcontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L2731",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_test_createmockcontext",
+      "callee": "mock",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "index_test_createmockcontext",
+      "callee": "mock",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "index_test_createmockcontext",
+      "callee": "mock",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "index_test_hascontinuation",
+      "callee": "some",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "index_test_contcount",
+      "callee": "filter",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "index_test_contcall",
+      "callee": "find",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "index_test_allmessagetext",
+      "callee": "join",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "index_test_allmessagetext",
+      "callee": "map",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "index_test_allmessagetext",
+      "callee": "filter",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "index_test_allmessagetext",
+      "callee": "flatMap",
+      "source_file": "src/hooks/todo-continuation/index.test.ts",
+      "source_location": "L90"
+    }
+  ]
+}

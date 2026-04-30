@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "src_cli_providers_ts",
+      "label": "providers.ts",
+      "file_type": "code",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "providers_generateliteconfig",
+      "label": "generateLiteConfig()",
+      "file_type": "code",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L48"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_cli_providers_ts",
+      "target": "src_cli_config_agent_mcps",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_providers_ts",
+      "target": "src_cli_custom_skills",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_providers_ts",
+      "target": "src_cli_skills",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_providers_ts",
+      "target": "src_cli_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_cli_providers_ts",
+      "target": "providers_generateliteconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "providers_generateliteconfig",
+      "callee": "buildPreset",
+      "source_file": "src/cli/providers.ts",
+      "source_location": "L102"
+    }
+  ]
+}

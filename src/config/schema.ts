@@ -324,9 +324,7 @@ export const PluginConfigSchema = z
         auto_route: z
           .boolean()
           .default(true)
-          .describe(
-            'Automatically route user requests to matching workflows',
-          ),
+          .describe('Automatically route user requests to matching workflows'),
         default_workflow: z.string().optional(),
       })
       .optional(),

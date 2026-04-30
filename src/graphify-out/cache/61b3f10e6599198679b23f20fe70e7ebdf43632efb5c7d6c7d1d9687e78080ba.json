@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_apply_patch_types_ts",
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/apply-patch/types.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "raw_calls": []
+}

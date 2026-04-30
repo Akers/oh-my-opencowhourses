@@ -1,0 +1,304 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_todo_continuation_index_ts",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_isquestion",
+      "label": "isQuestion()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "index_cancelpendingtimer",
+      "label": "cancelPendingTimer()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L107"
+    },
+    {
+      "id": "index_resetstate",
+      "label": "resetState()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L115"
+    },
+    {
+      "id": "index_striptodohygieneinstruction",
+      "label": "stripTodoHygieneInstruction()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L124"
+    },
+    {
+      "id": "index_appendtodohygieneinstruction",
+      "label": "appendTodoHygieneInstruction()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L138"
+    },
+    {
+      "id": "index_striptodohygieneinstructionfrommessage",
+      "label": "stripTodoHygieneInstructionFromMessage()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L152"
+    },
+    {
+      "id": "index_createtodocontinuationhook",
+      "label": "createTodoContinuationHook()",
+      "file_type": "code",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L163"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "tool",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "src_hooks_todo_continuation_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "src_hooks_todo_continuation_todo_hygiene",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_isquestion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_cancelpendingtimer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_resetstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_striptodohygieneinstruction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_appendtodohygieneinstruction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_striptodohygieneinstructionfrommessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_todo_continuation_index_ts",
+      "target": "index_createtodocontinuationhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "index_resetstate",
+      "target": "index_cancelpendingtimer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "index_appendtodohygieneinstruction",
+      "target": "index_striptodohygieneinstruction",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "index_striptodohygieneinstructionfrommessage",
+      "target": "index_striptodohygieneinstruction",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L160",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "index_isquestion",
+      "callee": "trim",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "index_isquestion",
+      "callee": "toLowerCase",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "index_isquestion",
+      "callee": "test",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "index_isquestion",
+      "callee": "some",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "index_cancelpendingtimer",
+      "callee": "clearTimeout",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "index_resetstate",
+      "callee": "clear",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L120"
+    },
+    {
+      "caller_nid": "index_resetstate",
+      "callee": "clear",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L121"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstruction",
+      "callee": "trimEnd",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstruction",
+      "callee": "endsWith",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L126"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstruction",
+      "callee": "lastIndexOf",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstruction",
+      "callee": "trimEnd",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstruction",
+      "callee": "slice",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L135"
+    },
+    {
+      "caller_nid": "index_appendtodohygieneinstruction",
+      "callee": "find",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "index_appendtodohygieneinstruction",
+      "callee": "reverse",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstructionfrommessage",
+      "callee": "find",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "index_striptodohygieneinstructionfrommessage",
+      "callee": "reverse",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L155"
+    },
+    {
+      "caller_nid": "index_createtodocontinuationhook",
+      "callee": "createTodoHygiene",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L215"
+    },
+    {
+      "caller_nid": "index_createtodocontinuationhook",
+      "callee": "tool",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L434"
+    },
+    {
+      "caller_nid": "index_createtodocontinuationhook",
+      "callee": "boolean",
+      "source_file": "src/hooks/todo-continuation/index.ts",
+      "source_location": "L437"
+    }
+  ]
+}

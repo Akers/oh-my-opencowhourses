@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {
+      "id": "src_hooks_json_error_recovery_hook_ts",
+      "label": "hook.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/json-error-recovery/hook.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "hook_createjsonerrorrecoveryhook",
+      "label": "createJsonErrorRecoveryHook()",
+      "file_type": "code",
+      "source_file": "src/hooks/json-error-recovery/hook.ts",
+      "source_location": "L52"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_hooks_json_error_recovery_hook_ts",
+      "target": "plugin",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/json-error-recovery/hook.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_hooks_json_error_recovery_hook_ts",
+      "target": "hook_createjsonerrorrecoveryhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/json-error-recovery/hook.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}
